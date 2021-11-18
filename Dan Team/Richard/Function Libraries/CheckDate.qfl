@@ -1,0 +1,53 @@
+﻿'The following function checks whether a date string (dateStr) 
+'has the characters representing DD/<MMM string>/YYYY 
+
+Function check_data_validity(dateStr) 
+        Dim firstDashPos, secondDashPos 
+        Dim mmPart, ddPart, yyyyPart 
+    	firstDashPos = inStr( dateStr , "-" ) 
+        secondDashPos = inStrRev( dateStr, "-" ) 
+        If ( (firstDashPos <> 2 and firstDashPos <> 3) or (secondDashPos <> 6 and secondDashPos <> 7)) Then 
+            reporter.ReportEvent micFail,"Format check", "Date string is"&" missing at least one dash ( - )." 
+        check_data_validity = False 
+            Exit function 
+        End If 
+ 
+        if firstDashPos = 2 Then
+			ddPart = mid( dateStr, 1, 1) 
+		else		
+			ddPart = mid( dateStr, 1,2 ) 
+		End If
+        mmPart = mid( dateStr, firstDashPos+1, 3 ) 
+        yyyyPart = mid( dateStr, secondDashPos +1 , 4 ) 
+		
+          If  not( mmPart="Jan" or mmPart="Feb" or mmPart="Mar" or mmPart="Apr" or mmPart="May" or mmPart="Jun" _
+        		or mmPart="Jul" or mmPart="Aug" or mmPart="Sep" or mmPart="Oct" or mmPart="Nov" or mmPart="Dec") Then 
+            reporter.ReportEvent micFail, "Format Check", "The month value " & mmPart & " is invalid. It is not a valid month string." 
+            check_data_validity = False 
+            Exit function 
+        End If 
+
+        If ddPart > 31 Then 
+             reporter.ReportEvent micFail, "Flight date must be later than today." 
+             check_data_validity = False 
+             Exit function 
+         End If 
+
+        If yyyyPart < 2018 Then 
+                reporter.ReportEvent micFail, "Format Check", "Flight date must be later than today." 
+        check_data_validity = False 
+             Exit function 
+
+         End If 
+
+    check_data_validity = True 
+
+End Function
+
+Function correct_date(Object)
+		print WpfWindow("Micro Focus MyFlight Sample").WpfCalendar("datePicker").GetVisibleText
+		WpfWindow("Micro Focus MyFlight Sample").WpfCalendar("datePicker").SetDate dateAdd("d",1,date)
+		WpfWindow("Micro Focus MyFlight Sample").WpfButton("FIND FLIGHTS").Click
+		reporter.ReportEvent micPass, "Date is valid", departureDate
+		correct_date = True
+End Function
