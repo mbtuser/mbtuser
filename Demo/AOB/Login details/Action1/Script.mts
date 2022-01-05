@@ -2,7 +2,7 @@
 Dim b
 Dim c
 a=Parameter("Password")
-b=Parameter("User_name")
+b=Parameter("User_Name")
 
 
 
