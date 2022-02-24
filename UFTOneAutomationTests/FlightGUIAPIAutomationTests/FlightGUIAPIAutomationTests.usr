@@ -33,7 +33,7 @@ Lang=none
 
 [TulipInfo]
 ProductName=Micro Focus UFT One
-Version=2022
+Version=2021
 
 [TulipAddins]
 ActiveX=
@@ -48,17 +48,14 @@ Java=
 Mobile=
 Oracle=
 PDF=
-PeopleSoft=
 PowerBuilder=
 Qt=
 SAP NWBC Desktop=
 SAP=
 SAPUI5=
 SAPWebExt=
-Siebel=
 Silverlight=
 Windows Applications=
-Stingray=
 TEA=
 Terminal Emulators=
 UI Automation=
