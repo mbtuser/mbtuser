@@ -1,2 +1,2 @@
-﻿RunAPITest "APITestCreateOrder_1" ,"Denver","Frankfurt","john"
+﻿RunAPITest "APITestCreateOrder_2"
 
