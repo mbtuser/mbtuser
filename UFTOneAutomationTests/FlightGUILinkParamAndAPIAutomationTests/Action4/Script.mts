@@ -1,2 +1,2 @@
-﻿RunAPITest "APITestCreateOrder_2"
+﻿RunAPITest "APITestCreateOrder"
 

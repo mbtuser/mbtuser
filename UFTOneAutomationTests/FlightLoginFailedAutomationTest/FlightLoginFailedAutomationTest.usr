@@ -13,7 +13,6 @@ DevelopTool=AQT
 [Actions]
 Action0=Action0\Script.mts
 1 Login=Action1\Script.mts
-2 FailedToFindElement=Action2\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -36,12 +35,34 @@ ProductName=Micro Focus UFT One
 Version=2021
 
 [TulipAddins]
+ActiveX=
+AgGrid=
 AI=
 Database=
+Delphi=
 File Content=
+Flex=
 Insight=
+Java=
+Mobile=
+Oracle=
+PDF=
+PowerBuilder=
+Qt=
+SAP NWBC Desktop=
+SAP=
+SAPUI5=
+SAPWebExt=
+Silverlight=
 Windows Applications=
 TEA=
+Terminal Emulators=
+UI Automation=
+UIA Pro=
+UIGrid=
+Visual Basic=
+Web=
+.NET=
 WPF=
 XML=
 
@@ -56,6 +77,3 @@ Action0\ObjectRepository.bdb=
 Action1\Script.mts=
 Action1\Resource.mtr=
 Action1\ObjectRepository.bdb=
-Action2\Script.mts=
-Action2\Resource.mtr=
-Action2\ObjectRepository.bdb=
