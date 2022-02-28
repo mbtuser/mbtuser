@@ -12,5 +12,7 @@ WpfWindow("Micro Focus MyFlight Sample").WpfEdit("password").SetSecure Parameter
 WpfWindow("Micro Focus MyFlight Sample").WpfButton("OK").Click
 If WpfWindow("Micro Focus MyFlight Sample_2").WpfButton("FIND FLIGHTS").Exist(5) Then
 Reporter.ReportEvent micPass, "Passed Test", "Login work properly" @@ hightlight id_;_2078633632_;_script infofile_;_ZIP::ssf10.xml_;_
+else
+Reporter.ReportEvent micFail "Failed Test", "Failed to Login"
 End If
 
