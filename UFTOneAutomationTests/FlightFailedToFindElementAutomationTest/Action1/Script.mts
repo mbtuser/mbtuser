@@ -7,5 +7,5 @@ WpfWindow("Micro Focus MyFlight Sample").WpfButton("OK").Click @@ hightlight id_
 If WpfWindow("Micro Focus MyFlight Sample").WpfButton("FIND FLIGHTS_2").Exist(5) Then
 Reporter.ReportEvent micPass, "Passed Test", "Login work properly"
 else
-Reporter.ReportEvent micFail "Failed Test", "Failed to Login"
+Reporter.ReportEvent micFail, "Failed Test", "Failed to Login"
 End If @@ hightlight id_;_2075215336_;_script infofile_;_ZIP::ssf6.xml_;_
