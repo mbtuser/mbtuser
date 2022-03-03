@@ -5,4 +5,4 @@ If WpfWindow("Micro Focus MyFlight Sample").WpfButton("SELECT FLIGHT").Exist(5) 
 	Else 
 	Reporter.ReportEvent micPass, "Passed Test", "find element properly"
 End If @@ hightlight id_;_2017343920_;_script infofile_;_ZIP::ssf3.xml_;_
-Reporter.ReportEvent micDone, "Login Done","the Flight App Done Failed to find element Test"
+Reporter.ReportEvent micDone, "Test Done","the Flight App Done Failed to find element Test"
