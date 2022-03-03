@@ -8,4 +8,4 @@ If Parameter("Order_Number") > 0 Then
 	Reporter.ReportEvent micFail, "Failed Test", "Link to parameters Order_Number Failed"
 End If
 WpfWindow("Micro Focus MyFlight Sample").WpfButton("SEARCH").Click @@ hightlight id_;_2100783960_;_script infofile_;_ZIP::ssf5.xml_;_
- @@ hightlight id_;_461640_;_script infofile_;_ZIP::ssf24.xml_;_
+Reporter.ReportEvent micDone, "Test Done","the Flight App Done Link parameters Order_Number Test" @@ hightlight id_;_461640_;_script infofile_;_ZIP::ssf24.xml_;_
