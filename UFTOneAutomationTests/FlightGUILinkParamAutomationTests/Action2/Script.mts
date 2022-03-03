@@ -35,4 +35,3 @@ Next
 print Parameter.Item("Order_Number")  ' this concatenates it to the end of the output window
 
 Reporter.ReportEvent micPass, Parameter.Item("Order_Number") , "order numbe is " +Parameter.Item("Order_Number")
-
