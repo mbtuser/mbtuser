@@ -19,3 +19,4 @@ Browser("DASHBOARD").Page("Login").WebButton("Login").Click
  	Reporter.ReportEvent micFail, "Login fail","the Octane fail to login"
  End If
 Reporter.ReportEvent micDone, "Done the tests","Done the Octane login tests"
+systemUtil.CloseProcessByName ("firefox.exe")
