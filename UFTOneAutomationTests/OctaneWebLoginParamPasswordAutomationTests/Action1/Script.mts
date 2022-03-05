@@ -1,5 +1,5 @@
-﻿systemUtil.CloseProcessByName ("firefox.exe")
-systemUtil.Run ("C:\Program Files\Mozilla Firefox\firefox.exe")
+﻿systemUtil.CloseProcessByName ("chrome.exe")
+systemUtil.Run ("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe")
 Browser("Login").Navigate "https://nightly-dev.almoctane.com/ui/?TENANTID=1&p=1001/1002#/dashboard" @@ script infofile_;_ZIP::ssf11.xml_;_
  
  If Browser("DASHBOARD").Page("DASHBOARD").WebElement("Open widgets & templates").Exist(15) Then
@@ -19,4 +19,4 @@ Browser("DASHBOARD").Page("Login").WebButton("Login").Click
  	Reporter.ReportEvent micFail, "Login fail","the Octane fail to login"
  End If
 Reporter.ReportEvent micDone, "Done the tests","Done the Octane login tests"
-systemUtil.CloseProcessByName ("firefox.exe")
+systemUtil.CloseProcessByName ("chrome.exe")
