@@ -14,3 +14,4 @@ End If @@ hightlight id_;_2363996_;_script infofile_;_ZIP::ssf12.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfCalendar("datePicker").SetDate "29-Jul-2024" @@ hightlight id_;_2090155848_;_script infofile_;_ZIP::ssf15.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfButton("FIND FLIGHTS").Click @@ hightlight id_;_2085992504_;_script infofile_;_ZIP::ssf16.xml_;_
 Reporter.ReportEvent micDone, "Login Done","the Flight App Done login with parameters Input type password Test"
+systemUtil.CloseProcessByName ("FlightsGUI.exe")
