@@ -10,4 +10,5 @@ If WpfWindow("Micro Focus MyFlight Sample").WpfButton("FIND FLIGHTS_2").Exist(5)
 	Reporter.ReportEvent micFail, "Failed Test", "Fail to Login incurrect user or password"
 End If @@ hightlight id_;_1931996136_;_script infofile_;_ZIP::ssf16.xml_;_
 Reporter.ReportEvent micDone, "Login Done","the Flight App Done login failed Test"
+systemUtil.CloseProcessByName ("FlightsGUI.exe")
 
