@@ -1,4 +1,8 @@
-﻿If Browser("DASHBOARD_2").Page("DASHBOARD").Image("user avatar").Exist(15) Then
+﻿systemUtil.CloseProcessByName ("firefox.exe")
+systemUtil.Run ("C:\Program Files\Mozilla Firefox\firefox.exe")
+
+Browser("DASHBOARD_2").Navigate "https://nightly-dev.almoctane.com/ui/?TENANTID=1&p=1001/1002#/dashboard"
+If Browser("DASHBOARD_2").Page("DASHBOARD").Image("user avatar").Exist(15) Then
 Browser("DASHBOARD_2").Page("DASHBOARD").Image("user avatar").Click @@ script infofile_;_ZIP::ssf17.xml_;_
 Browser("DASHBOARD_2").Page("DASHBOARD").WebButton("Logout").Click
  End If
