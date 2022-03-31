@@ -1,4 +1,4 @@
-﻿systemUtil.CloseProcessByName ("firefox.exe")
+﻿'systemUtil.CloseProcessByName ("firefox.exe")
 systemUtil.Run ("C:\Program Files\Mozilla Firefox\firefox.exe")
 
 Browser("DASHBOARD_2").Navigate "https://nightly-dev.almoctane.com/ui/?TENANTID=1&p=1001/1002#/dashboard"
