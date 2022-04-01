@@ -1,5 +1,4 @@
-﻿'systemUtil.CloseProcessByName ("firefox.exe")
-systemUtil.Run ("C:\Program Files\Mozilla Firefox\firefox.exe")
+﻿systemUtil.Run ("C:\Program Files\Mozilla Firefox\firefox.exe")
 
 Browser("DASHBOARD_2").Navigate "https://nightly-dev.almoctane.com/ui/?TENANTID=1&p=1001/1002#/dashboard"
 If Browser("DASHBOARD_2").Page("DASHBOARD").Image("user avatar").Exist(15) Then
