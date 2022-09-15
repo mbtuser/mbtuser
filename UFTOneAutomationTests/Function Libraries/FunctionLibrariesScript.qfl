@@ -1,0 +1,6 @@
+﻿Function AddNum(Byval num1,ByVal num2)
+    SumTotal =num1+num2
+	If SumTotal=30 Then
+		  print SumTotal	  
+	End If
+End Function
