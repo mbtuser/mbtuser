@@ -1,6 +1,4 @@
-﻿systemUtil.Run ("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe")
-
-Browser("DASHBOARD_2").Navigate "https://nightly-dev.almoctane.com/ui/?TENANTID=1&p=1001/1002#/dashboard"
+﻿Browser("DASHBOARD_2").Navigate "https://nightly-dev.almoctane.com/ui/?TENANTID=1&p=1001/1002#/dashboard"
 If Browser("DASHBOARD_2").Page("DASHBOARD").Image("user avatar").Exist(15) Then
 Browser("DASHBOARD_2").Page("DASHBOARD").Image("user avatar").Click @@ script infofile_;_ZIP::ssf17.xml_;_
 Browser("DASHBOARD_2").Page("DASHBOARD").WebButton("Logout").Click
@@ -16,4 +14,4 @@ Browser("DASHBOARD").Page("Login").WebButton("Login").Click
  	Reporter.ReportEvent micFail, "Login fail","the Octane fail to login"
  End If
 Reporter.ReportEvent micDone, "Done the tests","Done the Octane login tests"
-systemUtil.CloseProcessByName ("chrome.exe")
+
