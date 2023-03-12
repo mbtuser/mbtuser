@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.1.3.0
+Project("") = "AOBStocksAddToMyWatchlist", "AOBStocksAddToMyWatchlist\Test.tsp", "8986E2BE-AE79-4299-8715-2509EA4DACE6"
+	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
+		PathInformation = C:\Users\_alm_uft_auto\Desktop\AOBStocksAddToMyWatchlist\Test.tsp
+		Keyword = QTP
+		OpenAsReadOnly = False
+		BaselineId = 
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		8986E2BE-AE79-4299-8715-2509EA4DACE6.Debug|Any CPU.Build.0 = Debug|Any CPU
+		8986E2BE-AE79-4299-8715-2509EA4DACE6.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		8986E2BE-AE79-4299-8715-2509EA4DACE6.Release|Any CPU.Build.0 = Release|Any CPU
+		8986E2BE-AE79-4299-8715-2509EA4DACE6.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal
