@@ -1,0 +1,1 @@
+This test check if generated number between 1-10 is bigger or lower than 5

@@ -1,0 +1,1 @@
+﻿var __testDataSource={items:[{dataFilePath:'Default.xlsx',dataFileFormat:'excel',dataFileFolder:'C:\\Users\\_alm_uft_auto\\AppData\\Local\\Temp\\TempResults',namePairs:[]}]};
