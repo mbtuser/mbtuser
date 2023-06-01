@@ -82,3 +82,8 @@ Set WshShell = CreateObject("WScript.Shell")
 myKey = "HKCU\SOFTWARE\Mercury Interactive\QuickTest Professional\MicTest\MobileWorkspaceNameAT"
 WshShell.RegWrite myKey, Parameter("dl_workspace_name_at"),"REG_SZ"
 Set WshShell = Nothing
+
+Set WshShell = CreateObject("WScript.Shell")
+myKey = "HKCU\SOFTWARE\Mercury Interactive\QuickTest Professional\MicTest\MobileUseSSL"
+WshShell.RegWrite myKey, Parameter("dl_ssl"),"REG_DWORD"
+Set WshShell = Nothing
