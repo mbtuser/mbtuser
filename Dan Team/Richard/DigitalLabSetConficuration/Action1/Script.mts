@@ -5,7 +5,7 @@ Set WshShell = Nothing
 
 Set WshShell = CreateObject("WScript.Shell")
 myKey = "HKCU\SOFTWARE\Mercury Interactive\QuickTest Professional\MicTest\MobileHostPort"
-WshShell.RegWrite myKey, Parameter("dl_port"),REG_SZ"
+WshShell.RegWrite myKey, Parameter("dl_port"),"REG_SZ"
 Set WshShell = Nothing
 
 Set WshShell = CreateObject("WScript.Shell")
