@@ -24,6 +24,11 @@ WshShell.RegWrite myKey, Parameter("dl_password"),"REG_SZ"
 Set WshShell = Nothing
 
 Set WshShell = CreateObject("WScript.Shell")
+myKey = "HKCU\SOFTWARE\Mercury Interactive\QuickTest Professional\MicTest\MobileAccount"
+WshShell.RegWrite myKey, Parameter("dl_account"),"REG_SZ"
+Set WshShell = Nothing
+
+Set WshShell = CreateObject("WScript.Shell")
 myKey = "HKCU\SOFTWARE\Mercury Interactive\QuickTest Professional\MicTest\MobileTenantId"
 WshShell.RegWrite myKey, Parameter("dl_tenant"),"REG_SZ"
 Set WshShell = Nothing
