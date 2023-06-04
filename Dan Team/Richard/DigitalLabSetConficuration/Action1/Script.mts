@@ -87,3 +87,23 @@ Set WshShell = CreateObject("WScript.Shell")
 myKey = "HKCU\SOFTWARE\Mercury Interactive\QuickTest Professional\MicTest\MobileUseSSL"
 WshShell.RegWrite myKey, Parameter("dl_ssl"),"REG_DWORD"
 Set WshShell = Nothing
+
+Set WshShell = CreateObject("WScript.Shell")
+myKey = "HKCU\SOFTWARE\Mercury Interactive\QuickTest Professional\MicTest\DigitalLab_AccessKey"
+WshShell.RegWrite myKey, Parameter("dl_access_key"),"REG_SZ"
+Set WshShell = Nothing
+
+Set WshShell = CreateObject("WScript.Shell")
+myKey = "HKCU\SOFTWARE\Mercury Interactive\QuickTest Professional\MicTest\DigitalLab_InsecureSSL"
+WshShell.RegWrite myKey, Parameter("dl_insecure_ssl"),"REG_DWORD"
+Set WshShell = Nothing
+
+Set WshShell = CreateObject("WScript.Shell")
+myKey = "HKCU\SOFTWARE\Mercury Interactive\QuickTest Professional\MicTest\DigitalLab_ValueEdge_AccessKey"
+WshShell.RegWrite myKey, Parameter("dl_ve_access_key"),"REG_SZ"
+Set WshShell = Nothing
+
+Set WshShell = CreateObject("WScript.Shell")
+myKey = "HKCU\SOFTWARE\Mercury Interactive\QuickTest Professional\MicTest\MobileAuthType"
+WshShell.RegWrite myKey, Parameter("dl_type"),"REG_DWORD"
+Set WshShell = Nothing
