@@ -32,16 +32,17 @@ Lang=none
 
 [TulipInfo]
 ProductName=Micro Focus UFT One
-Version=2023
+Version=2021
 
 [TulipAddins]
 AI=
 Database=
 File Content=
 Insight=
+Mobile=
 Windows Applications=
 TEA=
-Web=
+Visual Basic=
 WPF=
 XML=
 
