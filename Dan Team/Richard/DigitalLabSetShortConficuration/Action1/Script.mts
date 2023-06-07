@@ -47,3 +47,8 @@ Set WshShell = CreateObject("WScript.Shell")
 myKey = "HKCU\SOFTWARE\Mercury Interactive\QuickTest Professional\MicTest\AddIn Manager\Mobile\Display Name"
 WshShell.RegWrite myKey, Parameter("dl_add_in_name"),"REG_SZ"
 Set WshShell = Nothing
+
+Set WshShell = CreateObject("WScript.Shell")
+myKey = "HKCU\SOFTWARE\Mercury Interactive\QuickTest Professional\MicTest\AddIn Manager\Mobile\Name"
+WshShell.RegWrite myKey, Parameter("dl_name"),"REG_SZ"
+Set WshShell = Nothing
