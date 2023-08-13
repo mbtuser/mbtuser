@@ -12,7 +12,7 @@ DevelopTool=AQT
 
 [Actions]
 Action0=Action0\Script.mts
-Search=Action1\Script.mts
+warning=Action1\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -31,8 +31,8 @@ Default Profile=default.usp
 Lang=none
 
 [TulipInfo]
-ProductName=Micro Focus Unified Functional Testing
-Version=15.0.2
+ProductName=Micro Focus UFT One
+Version=2022
 
 [TulipAddins]
 ActiveX=
@@ -46,6 +46,7 @@ Mobile=
 Windows Applications=
 TEA=
 UI Automation=
+UIA Pro=
 UIGrid=
 Web=
 .NET=
