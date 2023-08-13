@@ -1,1 +1,1 @@
-﻿RunAction "Search", oneIteration
+﻿RunAction "warning", oneIteration
