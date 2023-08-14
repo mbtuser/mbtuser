@@ -12,8 +12,7 @@ DevelopTool=AQT
 
 [Actions]
 Action0=Action0\Script.mts
-Login=Action1\Script.mts
-updateTests=Action2\Script.mts
+LoginUnitFromDiscovery=Action1\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -33,15 +32,17 @@ Lang=none
 
 [TulipInfo]
 ProductName=Micro Focus UFT One
-Version=2021
+Version=2023
 
 [TulipAddins]
+ActiveX=
 AI=
 Database=
 File Content=
 Insight=
 Windows Applications=
 TEA=
+Web=
 WPF=
 XML=
 
@@ -56,6 +57,3 @@ Action0\ObjectRepository.bdb=
 Action1\Script.mts=
 Action1\Resource.mtr=
 Action1\ObjectRepository.bdb=
-Action2\Script.mts=
-Action2\Resource.mtr=
-Action2\ObjectRepository.bdb=
