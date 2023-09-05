@@ -1,0 +1,67 @@
+
+'********************************************************************************
+'	ActiveX Functions
+'       -------------------------
+'
+'   Available Functions:
+'	* VerifyProperty - Verifies the value of a specified property (for all ActiveX test objects)
+'	* OutputProperty - Returns the value of the specified property (for all ActiveX test objects)
+'	* VerifyEnable - Verifies whether a specified object is enabled (for all ActiveX test objects)
+'	* VerifyValue - Verifies the value of a specified object (for AcxCalendar, AcxCheckBox, AcxComboBox, AcxEdit, AcxRadioButton)
+'	* GetValue - Returns the object value (for AcxCalendar, AcxCheckBox, AcxComboBox, AcxEdit, AcxRadioButton)
+'
+'   Version: QTP8.2 November 2004
+'   ** In order to use the functions in this file, you must also load the "Common.txt" function library file.
+'
+'   ** Do not modify this file. It may be automatically updated by a later version, and then you will lose your changes.
+'********************************************************************************
+
+Option Explicit
+
+' *********************************************************************************************
+' *** 			Register the Functions
+' *********************************************************************************************
+
+' Register the "VerifyProperty" Function
+RegisterUserFunc "ActiveX" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "AcxButton" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "AcxCalendar" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "AcxCheckBox" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "AcxComboBox" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "AcxEdit" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "AcxRadioButton" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "AcxTable" , "VerifyProperty" , "VerifyProperty"
+
+' Register the "OutputProperty" Function
+RegisterUserFunc "ActiveX" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "AcxButton" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "AcxCalendar" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "AcxCheckBox" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "AcxComboBox" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "AcxEdit" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "AcxRadioButton" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "AcxTable" , "OutputProperty" , "OutputProperty"
+
+' Register the "VerifyValue" Function
+RegisterUserFunc "AcxCalendar" , "VerifyValue" , "VerifyDate"
+RegisterUserFunc "AcxCheckBox" , "VerifyValue" , "VerifyValue"
+RegisterUserFunc "AcxComboBox" , "VerifyValue" , "VerifyText"
+RegisterUserFunc "AcxEdit" , "VerifyValue" , "VerifyText"
+RegisterUserFunc "AcxRadioButton" , "VerifyValue" , "VerifyValue"
+
+' Register the "GetValue" Function
+RegisterUserFunc "AcxCalendar" , "GetValue" , "GetDateProperty"
+RegisterUserFunc "AcxCheckBox" , "GetValue" , "GetValueProperty"
+RegisterUserFunc "AcxComboBox" , "GetValue" , "GetTextProperty"
+RegisterUserFunc "AcxEdit" , "GetValue" , "GetTextProperty"
+RegisterUserFunc "AcxRadioButton" , "GetValue" , "GetValueProperty"
+
+' Register the "VerifyEnable" Function
+RegisterUserFunc "ActiveX" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "AcxButton" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "AcxCalendar" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "AcxCheckBox" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "AcxComboBox" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "AcxEdit" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "AcxRadioButton" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "AcxTable" , "VerifyEnable" , "VerifyEnabled"
