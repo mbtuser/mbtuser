@@ -1,1 +1,0 @@
-﻿SystemUtil.Run "notepad.exe"

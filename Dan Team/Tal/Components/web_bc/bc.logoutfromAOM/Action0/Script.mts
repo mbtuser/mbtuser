@@ -1,1 +1,0 @@
-RunAction "bc.logoutfromAOM", oneIteration
