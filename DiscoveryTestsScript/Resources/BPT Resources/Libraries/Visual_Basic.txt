@@ -1,0 +1,94 @@
+
+'********************************************************************************
+'	Visual Basic Functions
+'       -------------------------
+'
+'   Available Functions:
+'	* VerifyProperty - Verifies the value of a specified property (for all Visual Basic test objects)
+'	* OutputProperty - Returns the value of the specified property (for all Visual Basic test objects)
+'	* VerifyEnable - Verifies whether a specified object is enabled (for all Visual Basic test objects)
+'	* VerifyValue - Verifies the value of a specified object (for VbCheckBox, VbComboBox, VbEdit, VbEditor, VbList, VbListView, VbRadioButton, VbTreeView)
+'	* GetValue - Returns the object value (for VbCheckBox, VbComboBox, VbEdit, VbEditor, VbList, VbListView, VbRadioButton, VbTreeView)
+'
+'   Version: QTP8.2 November 2004
+'   ** In order to use the functions in this file, you must also load the "Common.txt" function library file.
+'
+'   ** Do not modify this file. It may be automatically updated by a later version, and then you will lose your changes.
+'********************************************************************************
+
+Option Explicit
+
+' *********************************************************************************************
+' *** 			Register the Functions
+' *********************************************************************************************
+
+' Register the "VerifyProperty" Function
+RegisterUserFunc "VbButton" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "VbCheckBox" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "VbComboBox" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "VbEdit" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "VbEditor" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "VbFrame" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "VbList" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "VbLabel" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "VbListView" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "VbRadioButton" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "VbScrollBar" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "VbToolbar" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "VbTreeView" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "VbWindow" , "VerifyProperty" , "VerifyProperty"
+
+
+' Register the "OutputProperty" Function
+RegisterUserFunc "VbButton" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "VbCheckBox" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "VbComboBox" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "VbEdit" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "VbEditor" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "VbFrame" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "VbList" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "VbLabel" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "VbListView" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "VbRadioButton" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "VbScrollBar" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "VbToolbar" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "VbTreeView" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "VbWindow" , "OutputProperty" , "OutputProperty"
+
+' Register the "VerifyValue" Function
+RegisterUserFunc "VbCheckBox" , "VerifyValue" , "VerifyChecked"
+RegisterUserFunc "VbComboBox" , "VerifyValue" , "VerifyText"
+RegisterUserFunc "VbEdit" , "VerifyValue" , "VerifyText"
+RegisterUserFunc "VbEditor" , "VerifyValue" , "VerifyText"
+RegisterUserFunc "VbList" , "VerifyValue" , "VerifySelection"
+RegisterUserFunc "VbLabel" , "VerifyValue" , "VerifyText"
+RegisterUserFunc "VbListView" , "VerifyValue" , "VerifySelection"
+RegisterUserFunc "VbRadioButton" , "VerifyValue" , "VerifyChecked"
+RegisterUserFunc "VbTreeView" , "VerifyValue" , "VerifySelection"
+
+' Register the "GetValue" Function
+RegisterUserFunc "VbCheckBox" , "GetValue" , "GetCheckedProperty"
+RegisterUserFunc "VbComboBox" , "GetValue" , "GetTextProperty"
+RegisterUserFunc "VbEdit" , "GetValue" , "GetTextProperty"
+RegisterUserFunc "VbEditor" , "GetValue" , "GetTextProperty"
+RegisterUserFunc "VbList" , "GetValue" , "GetSelectionProperty"
+RegisterUserFunc "VbLabel" , "GetValue" , "GetTextProperty"
+RegisterUserFunc "VbListView" , "GetValue" , "GetSelectionProperty"
+RegisterUserFunc "VbRadioButton" , "GetValue" , "GetCheckedProperty"
+RegisterUserFunc "VbTreeView" , "GetValue" , "GetSelectionProperty"
+
+
+' Register the "VerifyEnable" Function
+RegisterUserFunc "VbButton" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "VbCheckBox" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "VbComboBox" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "VbEdit" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "VbEditor" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "VbFrame" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "VbList" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "VbListView" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "VbRadioButton" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "VbScrollBar" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "VbToolbar" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "VbTreeView" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "VbWindow" , "VerifyEnable" , "VerifyEnabled"
