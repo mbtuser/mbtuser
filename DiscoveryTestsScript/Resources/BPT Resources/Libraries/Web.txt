@@ -1,0 +1,131 @@
+
+'********************************************************************************
+'	Web Functions
+'       -------------------------
+'
+'   Available Functions:
+'	* VerifyProperty - Verifies the value of a specified property (for all Web test objects)
+'	* OutputProperty - Returns the value of the specified property (for all Web test objects)
+'	* VerifyEnable - Verifies whether a specified object is enabled (for all Web test objects)
+'	* VerifyValue - Verifies the value of a specified object (for WebCheckBox, WebEdit, WebFile, WebList, WebRadioGroup)
+'	* GetValue - Returns the object value (for WebCheckBox, WebEdit, WebFile, WebList, WebRadioGroup)
+'
+'   Version: QTP9.0 November 2005
+'   ** In order to use the functions in this file, you must also load the "Common.txt" function library file.
+'
+'   ** Do not modify this file. It may be automatically updated by a later version, and then you will lose your changes.
+'********************************************************************************
+
+Option Explicit
+
+' Function Sync
+' -----------------------
+' Supply default method that returns immediately, to be used in the Frame test object.
+' Returns - True.
+
+'@Description Waits for the  test  object to synchronize
+'@Documentation Wait for the <Test object name> <Test object type> to synchronize before continuing the run.
+Public Function Sync
+	Sync = True
+End Function
+
+
+' Function VerifyWebEnabled
+' -------------------------
+' Verify whether a specified object is enabled
+' Returns - True - if the test object is enabled
+' 
+'@Description Checks whether the specified test object is enabled
+'@Documentation Check whether the <Test object name> <test object type> is enabled.
+Public Function VerifyWebEnabled(obj)
+	Dim disable_property
+	' Get the enabled property from the test object
+	disable_property = obj.GetROProperty("disabled")
+	If disable_property = 0 Then ' The value is True (anything but 0)
+		Reporter.ReportEvent micPass, "VerifyEnabled Succeeded", "The test object is enabled"
+		VerifyWebEnabled = True
+	Else
+		Reporter.ReportEvent micFail, "VerifyEnabled Failed", "The test object is NOT enabled"
+		VerifyWebEnabled = False
+	End If
+End Function
+
+' Function LaunchBrowser
+' -----------------------
+' Launch browsers manually with different parameters.
+' Parameters:
+'       Browser - The name of the browser to launch
+'       device_model - The model of the specified device containing the browser
+'       device_manufacturer - The manufacturer of the specified device
+'       device_ostype - The operation system running on the specified device
+'       device_osversion - The operating system version running on the specified device
+
+'@Description Launch browser with specified parameters
+'@Documentation Launch desktop or mobile browser with specified parameters
+Public Function LaunchBrowser(Browser, device_model, device_manufacturer, device_ostype, device_osversion)
+    WebUtil.LaunchBrowser Browser, device_model, device_manufacturer, device_ostype, device_osversion
+End Function
+
+' *********************************************************************************************
+' *** 			Register the Functions
+' *********************************************************************************************
+
+' Register the "VerifyProperty" Function
+RegisterUserFunc "Browser" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "Frame" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "Image" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "Link" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "ViewLink" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "Page" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WebArea" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WebButton" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WebCheckBox" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WebEdit" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WebElement" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WebFile" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WebList" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WebRadioGroup" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WebTable" , "VerifyProperty" , "VerifyProperty"
+
+' Register the "OutputProperty" Function
+RegisterUserFunc "Browser" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "Frame" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "Image" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "Link" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "ViewLink" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "Page" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WebArea" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WebButton" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WebCheckBox" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WebEdit" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WebElement" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WebFile" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WebList" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WebRadioGroup" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WebTable" , "OutputProperty" , "OutputProperty"
+
+' Register the "VerifyValue" Function
+RegisterUserFunc "WebCheckBox" , "VerifyValue" , "VerifyChecked"
+RegisterUserFunc "WebEdit" , "VerifyValue" , "VerifyValue"
+RegisterUserFunc "WebFile" , "VerifyValue" , "VerifyValue"
+RegisterUserFunc "WebList" , "VerifyValue" , "VerifyValue"
+RegisterUserFunc "WebRadioGroup" , "VerifyValue" , "VerifyValue"
+
+' Register the "GetValue" Function
+RegisterUserFunc "Link" , "GetValue" , "GetTextProperty"
+RegisterUserFunc "WebCheckBox" , "GetValue" , "GetCheckedProperty"
+RegisterUserFunc "WebEdit" , "GetValue" , "GetValueProperty"
+RegisterUserFunc "WebFile" , "GetValue" , "GetValueProperty"
+RegisterUserFunc "WebList" , "GetValue" , "GetValueProperty"
+RegisterUserFunc "WebRadioGroup" , "GetValue" , "GetValueProperty"
+
+' Register the "VerifyEnable" Function
+RegisterUserFunc "WebButton" , "VerifyEnable" , "VerifyWebEnabled"
+RegisterUserFunc "WebCheckBox" , "VerifyEnable" , "VerifyWebEnabled"
+RegisterUserFunc "WebEdit" , "VerifyEnable" , "VerifyWebEnabled"
+RegisterUserFunc "WebFile" , "VerifyEnable" , "VerifyWebEnabled"
+RegisterUserFunc "WebList" , "VerifyEnable" , "VerifyWebEnabled"
+RegisterUserFunc "WebRadioGroup" , "VerifyEnable" , "VerifyWebEnabled"
+
+' Register the Sync Function
+RegisterUserFunc "Frame", "Sync", "Sync", True
