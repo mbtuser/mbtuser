@@ -23,7 +23,7 @@ If Browser("Advantage Shopping").Page("Advantage Shopping").Image("First Image")
 	else
 Reporter.ReportEvent micFail, "Failed", "Failed to click on First Image"
 End If
-If Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("Quantity Box").Exist(3) Then
+If Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("Quantity Box").Exist(5) Then
 	Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("Quantity Box").Set Parameter("Quantity")
 	else
 Reporter.ReportEvent micFail, "Failed", "Failed to set to Quantity Box"
