@@ -18,8 +18,9 @@ If Browser("Advantage Shopping").Page("Advantage Shopping").Image("Search Close 
 	else
 Reporter.ReportEvent micFail, "Failed", "Failed to click on Search Close Button"
 End If
-If Browser("Advantage Shopping").Page("Advantage Shopping").Image("First Image").Exist(3) Then
-	Browser("Advantage Shopping").Page("Advantage Shopping").Image("First Image").DoubleClick
+wait(2)
+If Browser("Advantage Shopping").Page("Advantage Shopping").Image("First Image").Exist(5) Then
+	Browser("Advantage Shopping").Page("Advantage Shopping").Image("First Image").Click
 	else
 Reporter.ReportEvent micFail, "Failed", "Failed to click on First Image"
 End If
