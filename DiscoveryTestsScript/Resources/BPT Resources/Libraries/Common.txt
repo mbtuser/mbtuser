@@ -1,0 +1,379 @@
+
+'********************************************************************************
+'	General and Standard Windows functions, plus registration information required by all add-in function library files
+'       -------------------------
+'
+'   Available Functions:
+'	* OpenApp - Opens a specified application (common file)
+'	* AddToTestResults - Adds a Report.Event step to the Test Results (common file)
+'	* VerifyProperty - Verifies the value of a specified property (for all Standard Windows test objects)
+'	* OutputProperty - Returns the value of the specified property (for all Standard Windows test objects)
+'	* VerifyEnable - Verifies whether a specified object is enabled (for all Standard Windows test objects)
+'	* VerifyValue - Verifies the value of a specified object (for Static, WinCalendar, WinCheckBox, WinComboBox, WinEdit, WinEditor, WinList, WinListView, WinRadioButton, WinSpin, WinTab, WinTreeView, ListView20WndClass, ListViewWndClass)
+'	* GetValue - Returns the object value (for Static, WinCalendar, WinCheckBox, WinComboBox, WinEdit, WinEditor, WinList, WinListView, WinRadioButton, WinSpin, WinTab, WinTreeView, ListView20WndClass, ListViewWndClass)
+'
+'   Version: QTP8.2 November 2004
+'
+'   ** Do not modify this file. It may be automatically updated by a later version, and then you will lose your changes.
+'********************************************************************************
+
+Option Explicit
+
+' Function OpenApp
+' ------------------
+' Open a specified application
+' Parameter: application - the application full name (including location)
+'@Description Opens an application
+'@Documentation Open the  <application> application.
+Function OpenApp (application)
+	systemUtil.Run application
+End Function
+
+' AddToTestResults
+' --------------
+' Add a Report.Event step to the Test Results
+'Parameters:
+'	status - Step status (micPass, micFail, micDone or micWarning)
+'       StepName - Name of the intended step in the report (object name)
+'       details - Description of the report event
+'
+'@Description Reports an event to the Test Results
+'@Documentation Report an event to the Test Results.
+Public Function AddToTestResults (status, StepName, details)
+	Reporter.ReportEvent status, StepName, details
+End Function
+
+' Function VerifyProperty
+' -----------------------
+' Verify the value of a specified property
+' Parameters:
+'	PropertyName - the property name to check
+'       ExpectedValue - the expected value of the property
+' Returns - True - if the expected value matches the actual value
+'
+'@Description Checks whether a property value matches its expected value
+'@Documentation Check whether  the <Test object name> <test object type> <PropertyName> property value matches the expected value: <ExpectedValue>.
+Public Function VerifyProperty (obj, PropertyName, ExpectedValue)
+	Dim actual_value
+	' Get the actual property value
+	actual_value = obj.GetROProperty(PropertyName)
+	' Compare the actual value to the expected value
+	If actual_value = ExpectedValue Then
+		Reporter.ReportEvent micPass, "VerifyProperty Succeeded", "The " & PropertyName & " expected value: " & ExpectedValue & " matches the actual value"
+		VerifyProperty = True
+	Else
+		Reporter.ReportEvent micFail, "VerifyProperty Failed", "The " & PropertyName & " expected value: " & ExpectedValue & " does not match the actual value: " & actual_value
+		VerifyProperty = False
+	End If
+End Function
+
+' Function OutputProperty
+' ------------------------
+' Return the value of the specified property
+' Parameters:
+'    	paramName - the parameter name (to return the value)
+' Returns - The property value
+'
+'@Description Returns the value of the specified property
+'@Documentation Return the <Test object name> <test object type> <PropertyName> value.
+Function OutputProperty (obj, PropertyName)
+	Dim property_value
+	property_value = obj.GetROProperty(PropertyName)
+	OutputProperty = property_value
+End Function
+
+
+' Function VerifyEnabled
+' -------------------------
+' Verify whether a specified object is enabled
+' Returns - True - if the test object is enabled
+'
+'@Description Checks whether the specified test object is enabled
+'@Documentation Check whether the <Test object name> <test object type> is enabled.
+Public Function VerifyEnabled (obj)
+	Dim enable_property
+	' Get the enabled property from the test object
+	enable_property = obj.GetROProperty("enabled")
+	If enable_property <> 0 Then ' The value is True (anything but 0)
+		Reporter.ReportEvent micPass, "VerifyEnabled Succeeded", "The test object is enabled"
+		VerifyEnabled = True
+	Else
+		Reporter.ReportEvent micFail, "VerifyEnabled Failed", "The test object is NOT enabled"
+		VerifyEnabled = False
+	End If
+End Function
+
+
+' Function VerifyDisabled
+' -------------------------
+' Verify whether a specified object is enabled (not disabled)
+' Returns - True - if the test object is enabled (not disabled)
+'
+'@Description Checks whether the specified test object is enabled
+'@Documentation Check whether the <Test object name> <test object type> is enabled.
+Public Function VerifyDisabled (obj)
+	Dim enable_property
+	' Get the disabled property from the test object
+	enable_property = obj.GetROProperty("disabled")
+	If enable_property = 0 Then ' The value is False (0) - Enabled
+		Reporter.ReportEvent micPass, "VerifyDisabled Succeeded", "The test object is enabled"
+		VerifyDisabled = True
+	Else
+		Reporter.ReportEvent micFail, "VerifyDisabled Failed", "The test object is NOT enabled"
+		VerifyDisabled = False
+	End If
+End Function
+
+' ******** Verify Functions - Start **************
+'--------------------------------------------------
+' In order to implement the 'VerifyValue' function for all QuickTest Professional test objects,
+' there is collection of functions that returns a specific property that represent
+' the 'Value' of a test object.
+
+' Function VerifyValueProperty
+' --------------------
+' Check the value for a specified object
+' Returns - True - if the expected Value matches the actual value
+'Parameter:
+'	ExpectedValue  - the expected value
+'@Description Checks the object value
+'@Documentation Check whether the <Test object name> <test object type> value matches the expected value: <ExpectedValue>
+Public Function VerifyValue (obj, ExpectedValue)
+	VerifyValue = VerifyProperty (obj, "value", ExpectedValue)
+End Function
+
+' Function VerifyTextProperty
+' --------------------
+' Check the text for a specified object
+' Returns - True - if the expected text matches the actual text
+'Parameter:
+'	ExpectedText  - the expected text
+'@Description Checks the object value
+'@Documentation Check whether the <Test object name> <test object type> value matches the expected value: <ExpectedText>.
+Public Function VerifyText (obj, ExpectedText)
+	VerifyText = VerifyProperty (obj, "text", ExpectedText)
+End Function
+
+' Function VerifyDateProperty
+' --------------------
+' Check the date for a specified object
+' Returns - True - if the expected date matches the actual value
+'Parameter:
+'	ExpectedDate  - the expected date
+'@Description Checks the object value
+'@Documentation Check whether the <Test object name> <test object type> value matches the expected value: <ExpectedDate>
+Public Function VerifyDate (obj, ExpectedDate)
+	VerifyDate = VerifyProperty (obj, "date", ExpectedDate)
+End Function
+
+' Function VerifyCheckedProperty
+' --------------------
+' Check the chceked property for a specified object
+' Returns - True - if the expected Value matches the actual value
+'Parameter:
+'	ExpectedChecked  - the expected value
+'@Description Checks the object value
+'@Documentation Check whether the <Test object name> <test object type> value matches the expected value: <ExpectedChecked>
+Public Function VerifyChecked (obj, ExpectedChecked)
+	VerifyChecked = VerifyProperty (obj, "checked", ExpectedChecked)
+End Function
+
+' Function VerifySelectionProperty
+' --------------------
+' Check the selection property for a specified object
+' Returns - True - if the expected Value matches the actual value
+'Parameter:
+'	ExpectedSelection  - the expected value
+'@Description Checks the object value
+'@Documentation Check whether the <Test object name> <test object type> value matches the expected value: <ExpectedSelection>
+Public Function VerifySelection (obj, ExpectedSelection)
+	VerifySelection = VerifyProperty (obj, "selection", ExpectedSelection)
+End Function
+
+' Function VerifyPositionProperty
+' --------------------
+' Check the position property for a specified object
+' Returns - True - if the expected Value matches the actual value
+'Parameter:
+'	ExpectedPosition  - the expected value
+'@Description Checks the object value
+'@Documentation Check whether the <Test object name> <test object type> value matches the expected value: <ExpectedPosition>
+Public Function VerifyPosition (obj, ExpectedPosition)
+	VerifyPosition = VerifyProperty (obj, "position", ExpectedPosition)
+End Function
+
+' ******** Verify Functions - End **************
+
+' ******** GetValue Functions - Start ***********
+
+
+' Function GetValueProperty
+' --------------------------
+' Return the object 'Value' property
+'
+'@Description Returns the Object value
+'@Documentation Return the <Test object name> <test object type> value.
+Public Function GetValueProperty (obj)
+	GetValueProperty = obj.GetROProperty("value")
+End Function
+
+' Function GetDateProperty
+' --------------------------
+' Return the object 'Date' property
+'
+'@Description Returns the Object value
+'@Documentation Return the <Test object name> <test object type> value.
+Public Function GetDateProperty (obj)
+	GetDateProperty = obj.GetROProperty("date")
+End Function
+
+' Function GetTextProperty
+' --------------------------
+' Return the object 'Text' property
+'
+'@Description Returns the Object value
+'@Documentation Return the <Test object name> <test object type> value.
+Public Function GetTextProperty (obj)
+	GetTextProperty = obj.GetROProperty("text")
+End Function
+
+
+' Function GetCheckedProperty
+' --------------------------
+' Return the object 'checked' property
+'
+'@Description Returns the Object value
+'@Documentation Return the <Test object name> <test object type> value.
+Public Function GetCheckedProperty (obj)
+	GetCheckedProperty = obj.GetROProperty("checked")
+End Function
+
+
+' Function GetSelectionProperty
+' --------------------------
+' Return the object 'selection' property
+'
+'@Description Returns the Object value
+'@Documentation Return the <Test object name> <test object type> value.
+Public Function GetSelectionProperty (obj)
+	GetSelectionProperty = obj.GetROProperty("selection")
+End Function
+
+
+' Function GetPositionProperty
+' --------------------------
+' Return the object 'position' property
+'
+'@Description Returns the Object value
+'@Documentation Return the <Test object name> <test object type> value.
+Public Function GetPositionProperty (obj)
+	GetPositionProperty = obj.GetROProperty("position")
+End Function
+
+' ******** GetValue functions - End ***********
+
+
+' *********************************************************************************************
+' *** 			Register the Functions
+' *********************************************************************************************
+
+' Register the "VerifyProperty" Function
+RegisterUserFunc "Dialog" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "Static" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinButton" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinCalendar" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinCheckBox" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinComboBox" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "Window" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinEdit" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinEditor" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinList" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinListView" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinObject" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinRadioButton" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinScrollBar" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinSpin" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinStatusBar" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinTab" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinToolbar" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "WinTreeView" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "ListView20WndClass" , "VerifyProperty" , "VerifyProperty"
+RegisterUserFunc "ListViewWndClass" , "VerifyProperty" , "VerifyProperty"
+
+' Register the "OutputProperty" Function
+RegisterUserFunc "Dialog" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "Static" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinButton" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinCalendar" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinCheckBox" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinComboBox" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "Window" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinEdit" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinEditor" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinList" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinListView" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinObject" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinRadioButton" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinScrollBar" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinSpin" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinStatusBar" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinTab" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinToolbar" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "WinTreeView" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "ListView20WndClass" , "OutputProperty" , "OutputProperty"
+RegisterUserFunc "ListViewWndClass" , "OutputProperty" , "OutputProperty"
+
+' Register the "VerifyValue" Function
+RegisterUserFunc "Static" , "VerifyValue" , "VerifyText"
+RegisterUserFunc "WinCalendar" , "VerifyValue" , "VerifyDate"
+RegisterUserFunc "WinCheckBox" , "VerifyValue" , "VerifyChecked"
+RegisterUserFunc "WinComboBox" , "VerifyValue" , "VerifyText"
+RegisterUserFunc "WinEdit" , "VerifyValue" , "VerifyText"
+RegisterUserFunc "WinEditor" , "VerifyValue" , "VerifyText"
+RegisterUserFunc "WinList" , "VerifyValue" , "VerifySelection"
+RegisterUserFunc "WinListView" , "VerifyValue" , "VerifySelection"
+RegisterUserFunc "WinRadioButton" , "VerifyValue" , "VerifyChecked"
+RegisterUserFunc "WinSpin" , "VerifyValue" , "VerifyPosition"
+RegisterUserFunc "WinTab" , "VerifyValue" , "VerifySelection"
+RegisterUserFunc "WinTreeView" , "VerifyValue" , "VerifySelection"
+RegisterUserFunc "ListView20WndClass" , "VerifyValue" , "VerifySelection"
+RegisterUserFunc "ListViewWndClass" , "VerifyValue" , "VerifySelection"
+
+' Register the "GetValue" Function
+RegisterUserFunc "Static" , "GetValue" , "GetTextProperty"
+RegisterUserFunc "WinCalendar" , "GetValue" , "GetDateProperty"
+RegisterUserFunc "WinCheckBox" , "GetValue" , "GetCheckedProperty"
+RegisterUserFunc "WinComboBox" , "GetValue" , "GetTextProperty"
+RegisterUserFunc "WinEdit" , "GetValue" , "GetTextProperty"
+RegisterUserFunc "WinEditor" , "GetValue" , "GetTextProperty"
+RegisterUserFunc "WinList" , "GetValue" , "GetSelectionProperty"
+RegisterUserFunc "WinListView" , "GetValue" , "GetSelectionProperty"
+RegisterUserFunc "WinRadioButton" , "GetValue" , "GetCheckedProperty"
+RegisterUserFunc "WinSpin" , "GetValue" , "GetPositionProperty"
+RegisterUserFunc "WinTab" , "GetValue" , "GetSelectionProperty"
+RegisterUserFunc "WinTreeView" , "GetValue" , "GetSelectionProperty"
+RegisterUserFunc "ListView20WndClass" , "GetValue" , "GetSelectionProperty"
+RegisterUserFunc "ListViewWndClass" , "GetValue" , "GetSelectionProperty"
+
+' Register the "VerifyEnable" Function
+RegisterUserFunc "Dialog" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "Static" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinButton" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinCalendar" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinCheckBox" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinComboBox" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "Window" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinEdit" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinEditor" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinList" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinListView" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinObject" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinRadioButton" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinScrollBar" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinSpin" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinStatusBar" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinTab" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinToolbar" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "WinTreeView" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "ListView20WndClass" , "VerifyEnable" , "VerifyEnabled"
+RegisterUserFunc "ListViewWndClass" , "VerifyEnable" , "VerifyEnabled"
