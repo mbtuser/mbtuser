@@ -12,7 +12,7 @@ DevelopTool=AQT
 
 [Actions]
 Action0=Action0\Script.mts
-Action1=Action1\Script.mts
+05.09.23_DiscoverySyncTrigerUnit=Action1\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -32,16 +32,18 @@ Lang=none
 
 [TulipInfo]
 ProductName=Micro Focus UFT One
-Version=2021
+Version=2023
 
 [TulipAddins]
+ActiveX=
 AI=
 Database=
 File Content=
 Insight=
-Mobile=
 Windows Applications=
 TEA=
+Web=
+WPF=
 XML=
 
 [ExtraFiles]
