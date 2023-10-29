@@ -102,3 +102,8 @@ Set WshShell = CreateObject("WScript.Shell")
 myKey = "HKCU\SOFTWARE\Mercury Interactive\QuickTest Professional\MicTest\DigitalLab_ValueEdge_AccessKey"
 WshShell.RegWrite myKey, Parameter("dl_ve_access_key"),"REG_SZ"
 Set WshShell = Nothing
+
+Set WshShell = CreateObject("WScript.Shell")
+myKey = "HKCU\SOFTWARE\Mercury Interactive\QuickTest Professional\MicTest\MobileAuthType"
+WshShell.RegWrite myKey, Parameter("dl_type"),"REG_DWORD"
+Set WshShell = Nothing
