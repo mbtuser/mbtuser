@@ -1,5 +1,16 @@
-﻿systemUtil.CloseProcessByName ("FlightsGUI.exe")
-systemUtil.Run ("C:\Program Files (x86)\Micro Focus\UFT One\samples\Flights Application\FlightsGUI.exe")
+﻿'-----------------------------------------------------------------------------------------------------------------------
+Dim objShell
+set objShell = CreateObject("Shell.Application")
+
+Set fileSystemObj = createobject("Scripting.FileSystemObject")
+flightsExist = "C:\Program Files (x86)\Micro Focus\UFT One\samples\Flights Application\FlightsGUI.exe"
+If fileSystemObj.FileExists(flightsExist) then
+objShell.ShellExecute "C:\Program Files (x86)\Micro Focus\UFT One\samples\Flights Application\FlightsGUI.exe"
+Else
+objShell.ShellExecute "C:\Program Files (x86)\OpenText\UFT One\samples\Flights Application\FlightsGUI.exe"
+End If
+
+'-----------------------------------------------------------------------------------------------------------------------
  @@ hightlight id_;_5639336_;_script infofile_;_ZIP::ssf30.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfEdit("agentName").Set Parameter("Wrong_User_Name") @@ hightlight id_;_2093996680_;_script infofile_;_ZIP::ssf32.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfEdit("password").SetSecure Parameter("Wrong_Password")
