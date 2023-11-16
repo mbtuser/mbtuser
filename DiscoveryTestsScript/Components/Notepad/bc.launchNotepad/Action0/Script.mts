@@ -1,1 +1,0 @@
-RunAction "bc.launchNotepad", oneIteration
