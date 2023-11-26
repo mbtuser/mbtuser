@@ -1,0 +1,1 @@
+RunAction "bc.notepadclose", oneIteration
