@@ -32,7 +32,7 @@ WpfWindow("OpenText MyFlight Sample").WpfButton("OK").Click @@ hightlight id_;_1
  	else
  	Reporter.ReportEvent micFail, "Failed", "Fail to Login incurrect user or password"
  End If
- wait(90)
+ wait(5400)
 End If
 Reporter.ReportEvent micDone, "Login Done","the Flight App Done login Test"
 systemUtil.CloseProcessByName ("FlightsGUI.exe")

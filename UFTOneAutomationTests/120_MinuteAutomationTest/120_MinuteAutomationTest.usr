@@ -35,14 +35,12 @@ ProductName=Micro Focus UFT One
 Version=2023
 
 [TulipAddins]
-ActiveX=
 AI=
 Database=
 File Content=
 Insight=
 Windows Applications=
 TEA=
-Web=
 WPF=
 XML=
 
