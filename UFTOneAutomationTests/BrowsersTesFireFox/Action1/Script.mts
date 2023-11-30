@@ -13,9 +13,9 @@ End If
 wait(3)
 Browser("Browser").Navigate Parameter("url") @@ hightlight id_;_328246_;_script infofile_;_ZIP::ssf3.xml_;_
 If Browser("Browser").Page("Booking.com | Official").Link("Sign in").Exist(5) Then
-Reporter.ReportEvent micPass, "Passed Test", "Edge Browser work properly"
+Reporter.ReportEvent micPass, "Passed Test", "FireFox Browser work properly"
 else
-Reporter.ReportEvent micFail, "Failed Test", "Edge Browser Failed"
+Reporter.ReportEvent micFail, "Failed Test", "FireFox Browser Failed"
 End If
  @@ hightlight id_;_197104_;_script infofile_;_ZIP::ssf9.xml_;_
 Browser("Browser").Page("Booking.com | Official").Link("Sign in").Click @@ script infofile_;_ZIP::ssf10.xml_;_
