@@ -32,13 +32,13 @@
     <VarName>TestDir</VarName>
     <IsSystem>true</IsSystem>
     <Description />
-    <SystemProfile>C:\Users\karatr\OneDrive - Micro Focus\Documents\UFT One\APITestCreateOrder_new</SystemProfile>
+    <SystemProfile />
   </Profiles>
   <Profiles>
     <VarName>TestName</VarName>
     <IsSystem>true</IsSystem>
     <Description />
-    <SystemProfile>APITestCreateOrder_new</SystemProfile>
+    <SystemProfile />
   </Profiles>
   <Profiles>
     <VarName>LocalHostName</VarName>
@@ -56,7 +56,7 @@
     <VarName>OSVersion</VarName>
     <IsSystem>true</IsSystem>
     <Description />
-    <SystemProfile>Microsoft Windows NT 10.0.19043.0</SystemProfile>
+    <SystemProfile>Microsoft Windows NT 10.0.19044.0</SystemProfile>
   </Profiles>
   <Profiles>
     <VarName>ProductDir</VarName>
@@ -74,19 +74,19 @@
     <VarName>ProductVer</VarName>
     <IsSystem>true</IsSystem>
     <Description />
-    <SystemProfile>2021.1</SystemProfile>
+    <SystemProfile>2023.0</SystemProfile>
   </Profiles>
   <Profiles>
     <VarName>UserName</VarName>
     <IsSystem>true</IsSystem>
     <Description />
-    <SystemProfile>karatr</SystemProfile>
+    <SystemProfile>rkarat</SystemProfile>
   </Profiles>
   <Profiles>
     <VarName>CurrentDate</VarName>
     <IsSystem>true</IsSystem>
     <Description />
-    <SystemProfile>2/24/2022 5:33:54 PM</SystemProfile>
+    <SystemProfile>12/5/2023 4:09:25 PM</SystemProfile>
   </Profiles>
   <Profiles>
     <VarName>QcUrl</VarName>
