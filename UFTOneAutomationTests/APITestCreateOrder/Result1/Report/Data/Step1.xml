@@ -1,0 +1,1 @@
+<?xml-stylesheet href="..//CPManager.xsl" type="text/xsl"?><report><Checkpoint xml:space="preserve"><VTD_Type name="Type">HP.ST.Ext.CheckpointRules.StracturalRule</VTD_Type><VTD_Name name="Name">Checkpoint 1</VTD_Name><VTD_Operation name="Operation">Structural Validation</VTD_Operation><VTD_Status name="Status" code="Success">Success</VTD_Status></Checkpoint></report>
