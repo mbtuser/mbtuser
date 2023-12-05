@@ -1,224 +1,29 @@
-2022-07-03 20:28:54,382 [1] INFO  - Loaded appender: FileAppenderInternal
-2022-07-03 20:28:54,418 [1] INFO  - Loaded appender: FileAppenderExternal
-2022-07-03 20:28:54,419 [1] INFO  - Loaded appender: UserLoggerAppender
-2022-07-03 20:28:54,420 [1] INFO  - Loaded appender: FileAppenderInternal
-2022-07-03 20:28:54,421 [1] INFO  - Loaded appender: FileAppenderExternal
-2022-07-03 20:28:54,422 [1] INFO  - Loaded appender: UserLoggerAppender
-2022-07-03 20:28:56,184 [9] INFO  - Step 'Start' : Step 'Start' started
-2022-07-03 20:28:56,297 [9] INFO  - Step 'Start' ended successfully
-2022-07-03 20:28:56,303 [9] INFO  - Step 'Test Flow' : Step 'Test Flow' started
-2022-07-03 20:28:56,906 [9] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
-2022-07-03 20:28:56,909 [9] INFO  - Step 'GetFlights' : Step 'GetFlights' started
-2022-07-03 20:28:56,943 [9] INFO  - 
+2023-12-05 16:12:40,682 [1] INFO  - Loaded appender: FileAppenderInternal
+2023-12-05 16:12:40,691 [1] INFO  - Loaded appender: FileAppenderExternal
+2023-12-05 16:12:40,691 [1] INFO  - Loaded appender: UserLoggerAppender
+2023-12-05 16:12:40,691 [1] INFO  - Loaded appender: FileAppenderInternal
+2023-12-05 16:12:40,692 [1] INFO  - Loaded appender: FileAppenderExternal
+2023-12-05 16:12:40,692 [1] INFO  - Loaded appender: UserLoggerAppender
+2023-12-05 16:12:41,052 [9] INFO  - Step 'Start' : Step 'Start' started
+2023-12-05 16:12:41,072 [9] INFO  - Step 'Start' ended successfully
+2023-12-05 16:12:41,076 [9] INFO  - Step 'Test Flow' : Step 'Test Flow' started
+2023-12-05 16:12:41,288 [9] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2023-12-05 16:12:41,290 [9] INFO  - Step 'GetFlights' : Step 'GetFlights' started
+2023-12-05 16:12:41,301 [9] INFO  - 
 Request:
 
 <Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
   <Body>
     <GetFlights xmlns="HP.SOAQ.SampleApp">
-      <DepartureCity>San Francisco</DepartureCity>
-      <ArrivalCity>Los Angeles</ArrivalCity>
-      <FlightDate>2115-02-28T00:00:00</FlightDate>
+      <DepartureCity>Denver</DepartureCity>
+      <ArrivalCity>Seattle</ArrivalCity>
+      <FlightDate>2115-06-01T00:00:00</FlightDate>
     </GetFlights>
   </Body>
 </Envelope>
 
-2022-07-03 20:28:56,970 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
-2022-07-03 20:29:02,770 [9] INFO  - Returning the response to the previous channel
-2022-07-03 20:29:02,777 [9] INFO  - 
-Response:
-
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Body>
-    <GetFlightsResponse xmlns="HP.SOAQ.SampleApp">
-      <GetFlightsResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-        <Flight>
-          <Airline>DA</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>08:53 AM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>08:09 AM</DepartureTime>
-          <FlightNumber>1435</FlightNumber>
-          <Price>109.2</Price>
-        </Flight>
-        <Flight>
-          <Airline>AA</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>08:45 AM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>08:00 AM</DepartureTime>
-          <FlightNumber>3227</FlightNumber>
-          <Price>103.9</Price>
-        </Flight>
-        <Flight>
-          <Airline>AA</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>11:09 AM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>10:24 AM</DepartureTime>
-          <FlightNumber>3231</FlightNumber>
-          <Price>105.2</Price>
-        </Flight>
-        <Flight>
-          <Airline>UA</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>02:48 PM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>12:48 PM</DepartureTime>
-          <FlightNumber>3233</FlightNumber>
-          <Price>166.2</Price>
-        </Flight>
-        <Flight>
-          <Airline>AA</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>01:33 PM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>12:48 PM</DepartureTime>
-          <FlightNumber>3235</FlightNumber>
-          <Price>108.8</Price>
-        </Flight>
-        <Flight>
-          <Airline>UA</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>04:18 PM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>12:48 PM</DepartureTime>
-          <FlightNumber>3236</FlightNumber>
-          <Price>174.47</Price>
-        </Flight>
-        <Flight>
-          <Airline>DL</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>04:42 PM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>03:12 PM</DepartureTime>
-          <FlightNumber>3238</FlightNumber>
-          <Price>175.47</Price>
-        </Flight>
-        <Flight>
-          <Airline>AA</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>03:57 PM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>03:12 PM</DepartureTime>
-          <FlightNumber>3239</FlightNumber>
-          <Price>103.4</Price>
-        </Flight>
-        <Flight>
-          <Airline>DA</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>01:41 PM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>12:57 PM</DepartureTime>
-          <FlightNumber>3418</FlightNumber>
-          <Price>170.47</Price>
-        </Flight>
-        <Flight>
-          <Airline>DA</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>10:05 AM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>09:21 AM</DepartureTime>
-          <FlightNumber>3564</FlightNumber>
-          <Price>124.4</Price>
-        </Flight>
-        <Flight>
-          <Airline>DA</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>05:17 PM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>04:33 PM</DepartureTime>
-          <FlightNumber>4941</FlightNumber>
-          <Price>177.47</Price>
-        </Flight>
-        <Flight>
-          <Airline>DA</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>07:41 PM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>06:57 PM</DepartureTime>
-          <FlightNumber>6065</FlightNumber>
-          <Price>122.8</Price>
-        </Flight>
-        <Flight>
-          <Airline>DA</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>12:29 PM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>11:45 AM</DepartureTime>
-          <FlightNumber>6087</FlightNumber>
-          <Price>111.2</Price>
-        </Flight>
-        <Flight>
-          <Airline>AA</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>11:00 AM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>08:00 AM</DepartureTime>
-          <FlightNumber>6226</FlightNumber>
-          <Price>173.47</Price>
-        </Flight>
-        <Flight>
-          <Airline>DA</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>04:05 PM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>03:21 PM</DepartureTime>
-          <FlightNumber>7465</FlightNumber>
-          <Price>122.8</Price>
-        </Flight>
-        <Flight>
-          <Airline>DA</Airline>
-          <ArrivalCity>Los Angeles</ArrivalCity>
-          <ArrivalTime>02:53 PM</ArrivalTime>
-          <DepartureCity>San Francisco</DepartureCity>
-          <DepartureTime>02:09 PM</DepartureTime>
-          <FlightNumber>7854</FlightNumber>
-          <Price>125.2</Price>
-        </Flight>
-      </GetFlightsResult>
-    </GetFlightsResponse>
-  </s:Body>
-</s:Envelope>
-
-2022-07-03 20:29:02,814 [9] INFO  - Structural Validation: True
-2022-07-03 20:29:02,825 [9] INFO  - Step 'GetFlights' ended successfully
-2022-07-03 20:29:02,827 [9] INFO  - Step 'CreateFlightOrder' : Step 'CreateFlightOrder' started
-2022-07-03 20:29:02,832 [9] INFO  - 
-Request:
-
-<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
-  <Body>
-    <CreateFlightOrder xmlns="HP.SOAQ.SampleApp">
-      <FlightOrder>
-        <Class>Business</Class>
-        <CustomerName>John Parker</CustomerName>
-        <DepartureDate>2115-02-28T00:00:00</DepartureDate>
-        <FlightNumber>1435</FlightNumber>
-        <NumberOfTickets>1</NumberOfTickets>
-      </FlightOrder>
-    </CreateFlightOrder>
-  </Body>
-</Envelope>
-
-2022-07-03 20:29:02,837 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
-2022-07-03 20:29:02,880 [9] INFO  - Returning the response to the previous channel
-2022-07-03 20:29:02,883 [9] INFO  - 
-Response:
-
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Body>
-    <CreateFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
-      <CreateFlightOrderResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
-        <OrderNumber>4109</OrderNumber>
-        <TotalPrice>218.4</TotalPrice>
-      </CreateFlightOrderResult>
-    </CreateFlightOrderResponse>
-  </s:Body>
-</s:Envelope>
-
-2022-07-03 20:29:02,892 [9] INFO  - Structural Validation: True
-2022-07-03 20:29:02,897 [9] INFO  - Step 'CreateFlightOrder' ended successfully
-2022-07-03 20:29:02,899 [9] INFO  - Step 'Iteration 1' ended successfully
-2022-07-03 20:29:02,902 [9] INFO  - Step 'Test Flow' ended successfully
-2022-07-03 20:29:04,420 [9] INFO  - Step 'End' : Step 'End' started
-2022-07-03 20:29:04,434 [9] INFO  - Step 'End' ended successfully
+2023-12-05 16:12:41,309 [9] INFO  - URL: http://localhost:8000/Flights_SOAP
+2023-12-05 16:12:45,430 [9] ERROR - Step 'GetFlights' : Unable to connect to the remote server
+2023-12-05 16:12:45,431 [9] ERROR - Step 'GetFlights' ended unsuccessfully
+2023-12-05 16:12:45,432 [9] INFO  - Step 'Iteration 1' ended successfully
+2023-12-05 16:12:45,433 [9] INFO  - Step 'Test Flow' ended successfully

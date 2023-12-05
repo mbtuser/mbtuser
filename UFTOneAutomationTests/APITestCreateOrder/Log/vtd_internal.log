@@ -1,10 +1,12 @@
-2022-07-03 20:29:02,821 [9] ERROR - Failed to log checkpoint status:
-2022-07-03 20:29:02,822 [9] ERROR - System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
-   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
-   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.WriteCPToLog(Dictionary`2 reportData, ILog log)
-   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.ReportToInternalLog(ISTRunTimeContext context, Dictionary`2 reportData)
-2022-07-03 20:29:02,894 [9] ERROR - Failed to log checkpoint status:
-2022-07-03 20:29:02,895 [9] ERROR - System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
-   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
-   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.WriteCPToLog(Dictionary`2 reportData, ILog log)
-   at HP.ST.Fwk.RunTimeFWK.CheckpointFWK.ReportImpl.ReportToInternalLog(ISTRunTimeContext context, Dictionary`2 reportData)
+2023-12-05 16:12:45,429 [9] ERROR - Unable to connect to the remote server :    at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at HP.Utt.St.Utilities.StHttpRequest.SendWebRequest()
+   at HP.Utt.St.Utilities.StHttpRequest.ConstructRequest()
+   at HP.Utt.St.Utilities.StHttpRequest.SendRequest(Boolean send)
+   at HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel.Send(Message request, Context context, Boolean oneWay)
+   at HP.ST.Ext.CommunicationChannels.ConcreteChannels.HttpChannel.Send(Message request, Context context)
+   at HP.ST.Ext.CommunicationChannels.ConcreteChannels.EncodingChannel.Send(Message request, Context context, Boolean isOneWay)
+   at HP.ST.Ext.CommunicationChannels.ConcreteChannels.EncodingChannel.Send(Message request, Context context)
+   at HP.ST.Ext.WebServicesActivities.StServiceCallActivity.SendRequestAndHandleResponse(ChannelBase channel, Message request, Context context)
+   at HP.ST.Ext.WebServicesActivities.StServiceCallActivity.SendRequestAndHandleResponse(String envelope, Context context, ChannelPipeline pipeline)
+   at HP.ST.Ext.WebServicesActivities.StServiceCallActivity.ExecuteStep()
