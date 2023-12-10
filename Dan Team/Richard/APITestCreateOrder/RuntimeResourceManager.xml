@@ -1,6 +1,0 @@
-<RuntimeResourceManager>
-<RuntimeResource><Key>{Step.GeneralProperties.StServiceCallActivity4.TransportProtocol.SOAPProperties.EndpointAddress}</Key><Path>0</Path><Value></Value><AddinId>StmDependencyResolver</AddinId></RuntimeResource>
-<RuntimeResource><Key>{Step.GeneralProperties.StServiceCallActivity5.TransportProtocol.SOAPProperties.EndpointAddress}</Key><Path>0</Path><Value></Value><AddinId>StmDependencyResolver</AddinId></RuntimeResource>
-<RuntimeResource><Key>{WS_Flights!Input.TablePath}</Key><Path>Local</Path><Value>C:\Program Files (x86)\Micro Focus\UFT One\samples\Flights Application\SampleAppData.xlsx</Value><AddinId>DataAwarenessDependencyResolver</AddinId></RuntimeResource>
-<RuntimeResource><Key>{WS_Flights!Output.TablePath}</Key><Path>Local</Path><Value>C:\Program Files (x86)\Micro Focus\UFT One\samples\Flights Application\SampleAppData.xlsx</Value><AddinId>DataAwarenessDependencyResolver</AddinId></RuntimeResource>
-</RuntimeResourceManager>

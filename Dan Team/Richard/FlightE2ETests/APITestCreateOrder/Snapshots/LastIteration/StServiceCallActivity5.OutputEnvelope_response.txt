@@ -1,1 +1,0 @@
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><CreateFlightOrderResponse xmlns="HP.SOAQ.SampleApp"><CreateFlightOrderResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><OrderNumber>835</OrderNumber><TotalPrice>1794.7</TotalPrice></CreateFlightOrderResult></CreateFlightOrderResponse></s:Body></s:Envelope>
