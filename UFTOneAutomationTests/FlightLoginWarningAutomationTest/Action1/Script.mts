@@ -10,8 +10,8 @@ Else
 objShell.ShellExecute "C:\Program Files (x86)\OpenText\UFT One\samples\Flights Application\FlightsGUI.exe"
 End If
 
-'-----------------------------------------------------------------------------------------------------------------------
- @@ hightlight id_;_2067902600_;_script infofile_;_ZIP::ssf7.xml_;_
+'----------------------------------------------------------------------------------------------------------------------- @@ hightlight id_;_2035501256_;_script infofile_;_ZIP::ssf29.xml_;_
+ 
 WpfWindow("Micro Focus MyFlight Sample").WpfEdit("agentName").Set Parameter("User_Name") @@ hightlight id_;_2113647904_;_script infofile_;_ZIP::ssf9.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfEdit("password").SetSecure Parameter("Password") @@ hightlight id_;_2092967184_;_script infofile_;_ZIP::ssf11.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfButton("OK").Click
@@ -21,8 +21,6 @@ WpfWindow("Micro Focus MyFlight Sample").WpfButton("OK").Click
  	else
  	Reporter.ReportEvent micFail, "Failed", "Fail to Login incurrect user or password"
  End If
-Reporter.ReportEvent micWarning, "Warning Tests","the Warning is presented properly on the report"
-WpfWindow("Micro Focus MyFlight Sample").WpfCalendar("datePicker").SetDate "29-Jul-2024" @@ hightlight id_;_2090155848_;_script infofile_;_ZIP::ssf15.xml_;_
-WpfWindow("Micro Focus MyFlight Sample").WpfButton("FIND FLIGHTS").Click @@ hightlight id_;_2085992504_;_script infofile_;_ZIP::ssf16.xml_;_
+Reporter.ReportEvent micWarning, "Warning Tests","the Warning is presented properly on the report" @@ hightlight id_;_2085992504_;_script infofile_;_ZIP::ssf16.xml_;_
 Reporter.ReportEvent micDone, "Login Done","the Flight App Done login with Warning report Test"
 systemUtil.CloseProcessByName ("FlightsGUI.exe")
