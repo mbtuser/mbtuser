@@ -2,7 +2,7 @@
 wait 5
 WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("toCity").Select "San Francisco"
 wait 5
-WpfWindow("Micro Focus MyFlight Sample").WpfImage("WpfImage_3").Click 9,13
+'WpfWindow("Micro Focus MyFlight Sample").WpfImage("WpfImage_3").Click 9,13
 wait 5
 WpfWindow("Micro Focus MyFlight Sample").WpfCalendar("Su").SetDate "30-Jun-2024"
 wait 5
