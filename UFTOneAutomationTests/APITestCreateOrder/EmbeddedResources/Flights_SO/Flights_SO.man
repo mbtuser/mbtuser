@@ -18,7 +18,7 @@
         <string>RepositoryPath</string>
       </Key>
       <Value>
-        <string>D:\OpenText\UFTOne\new script\UFTOneAutomationTests\APITestCreateOrder\EmbeddedResources</string>
+        <string>D:\OpenText\UFTOne\new script\APITestCreateOrder\EmbeddedResources</string>
       </Value>
     </Item>
     <Item>
@@ -26,7 +26,7 @@
         <string>ResourceOrigin</string>
       </Key>
       <Value>
-        <string>D:\OpenText\UFTOne\new script\UFTOneAutomationTests\APITestCreateOrder\EmbeddedResources\Flights_SO</string>
+        <string>D:\OpenText\UFTOne\new script\APITestCreateOrder\EmbeddedResources\Flights_SO</string>
       </Value>
     </Item>
     <Item>
