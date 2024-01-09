@@ -68,13 +68,13 @@
     <VarName>ProductName</VarName>
     <IsSystem>true</IsSystem>
     <Description />
-    <SystemProfile>Micro Focus UFT One</SystemProfile>
+    <SystemProfile>OpenText UFT One</SystemProfile>
   </Profiles>
   <Profiles>
     <VarName>ProductVer</VarName>
     <IsSystem>true</IsSystem>
     <Description />
-    <SystemProfile>2023.0</SystemProfile>
+    <SystemProfile>23.4</SystemProfile>
   </Profiles>
   <Profiles>
     <VarName>UserName</VarName>
@@ -86,7 +86,7 @@
     <VarName>CurrentDate</VarName>
     <IsSystem>true</IsSystem>
     <Description />
-    <SystemProfile>12/10/2023 4:43:10 PM</SystemProfile>
+    <SystemProfile>1/9/2024 5:57:25 PM</SystemProfile>
   </Profiles>
   <Profiles>
     <VarName>QcUrl</VarName>
