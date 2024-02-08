@@ -3,5 +3,3 @@
 End If
 Device("Device").App("UICatalog").MobileList("list").Select 1
 Device("Device").App("UICatalog").MobileButton("Button").Tap @@ hightlight id_;_-1_;_script infofile_;_ZIP::ssf5.xml_;_
-
-
