@@ -35,7 +35,6 @@ ProductName=OpenText UFT One
 Version=23.4
 
 [TulipAddins]
-AF=
 AI=
 Database=
 File Content=
@@ -44,6 +43,7 @@ Mobile=
 Windows Applications=
 TEA=
 Web=
+WPF=
 XML=
 
 [ExtraFiles]
