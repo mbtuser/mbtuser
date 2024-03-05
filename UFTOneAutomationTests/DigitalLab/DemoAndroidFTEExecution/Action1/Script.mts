@@ -14,4 +14,4 @@ Device("Device").App("Gestures Hybrid").MobileWebView("mybrowser").Page("HPE Mob
 Device("Device").App("Gestures Hybrid").MobileWebView("mybrowser").Page("Page").Link("Tap to Zoom").Click
 Device("Device").App("Gestures Hybrid").MobileWebView("mybrowser").Page("image viewer").Image("1").Click
 Device("Device").App("Gestures Hybrid").MobileWebView("mybrowser").Page("image viewer").Image("1_2").Click
-Device("Device").App("Gestures Hybrid").MobileWebView("mybrowser").Page("image viewer").WebElement("WebElement").Click
+Device("Device").App("Gestures Hybrid").MobileWebView("mybrowser").Page("image viewer").WebButton("Back Button").Click
