@@ -15,3 +15,4 @@ Device("Device").App("Gestures Hybrid").MobileWebView("mybrowser").Page("Page").
 Device("Device").App("Gestures Hybrid").MobileWebView("mybrowser").Page("image viewer").Image("1").Click
 Device("Device").App("Gestures Hybrid").MobileWebView("mybrowser").Page("image viewer").Image("1_2").Click
 Device("Device").App("Gestures Hybrid").MobileWebView("mybrowser").Page("image viewer").WebButton("Back Button").Click
+RunAction "Action2", oneIteration
