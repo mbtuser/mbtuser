@@ -12,7 +12,7 @@ DevelopTool=AQT
 
 [Actions]
 Action0=Action0\Script.mts
-FireFox_rename=Action1\Script.mts
+FireFox_rename_second_test=Action1\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
