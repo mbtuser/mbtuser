@@ -1,1 +1,1 @@
-﻿RunAction "FireFox_rename", oneIteration
+﻿RunAction "FireFox_rename_second_test", oneIteration
