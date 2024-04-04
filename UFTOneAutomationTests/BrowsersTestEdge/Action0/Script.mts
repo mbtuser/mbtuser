@@ -1,1 +1,1 @@
-﻿RunAction "Edge_rename", oneIteration
+﻿RunAction "Edge", oneIteration
