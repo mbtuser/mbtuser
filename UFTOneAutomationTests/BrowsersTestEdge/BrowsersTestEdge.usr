@@ -12,7 +12,7 @@ DevelopTool=AQT
 
 [Actions]
 Action0=Action0\Script.mts
-Edge_rename=Action1\Script.mts
+Edge=Action1\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -43,7 +43,6 @@ Mobile=
 Windows Applications=
 TEA=
 Web=
-WPF=
 XML=
 
 [ExtraFiles]
