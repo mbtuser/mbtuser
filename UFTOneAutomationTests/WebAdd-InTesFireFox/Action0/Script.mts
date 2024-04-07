@@ -1,1 +1,1 @@
-﻿RunAction "FireFox", oneIteration
+﻿RunAction "FireFox_add-in", oneIteration
