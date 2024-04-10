@@ -13,6 +13,7 @@ DevelopTool=AQT
 [Actions]
 Action0=Action0\Script.mts
 Action1=Action1\Script.mts
+Action2=Action2\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -56,3 +57,6 @@ Action0\ObjectRepository.bdb=
 Action1\Script.mts=
 Action1\Resource.mtr=
 Action1\ObjectRepository.bdb=
+Action2\Script.mts=
+Action2\Resource.mtr=
+Action2\ObjectRepository.bdb=
