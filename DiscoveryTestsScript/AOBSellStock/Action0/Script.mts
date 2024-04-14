@@ -1,0 +1,1 @@
+﻿RunAction "SellStock", oneIteration
