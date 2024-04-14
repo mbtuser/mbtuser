@@ -1,3 +1,4 @@
-﻿RunAction "Rename", oneIteration
-RunAction "Action2", oneIteration
-RunAction "Action3", oneIteration
+﻿RunAction "Rename1", oneIteration
+RunAction "Rename2", oneIteration
+RunAction "Rename3", oneIteration
+RunAction "NewActionTests", oneIteration
