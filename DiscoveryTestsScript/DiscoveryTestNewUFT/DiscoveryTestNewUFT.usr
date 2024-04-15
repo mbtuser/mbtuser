@@ -15,7 +15,8 @@ Action0=Action0\Script.mts
 Rename3=Action3\Script.mts
 Rename1=Action1\Script.mts
 Rename2=Action2\Script.mts
-NewActionTestsRename=Action4\Script.mts
+NewActionTestsRename2=Action4\Script.mts
+newActionItay=Action5\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -69,3 +70,6 @@ Action2\ObjectRepository.bdb=
 Action4\Script.mts=
 Action4\Resource.mtr=
 Action4\ObjectRepository.bdb=
+Action5\Script.mts=
+Action5\Resource.mtr=
+Action5\ObjectRepository.bdb=
