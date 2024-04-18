@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.1.3.0
+Project("") = "UFTOneURLRedpond", "UFTOneURLRedpond\Test.tsp", "B4B72D98-232F-4EB8-8746-417FF8F7CB06"
+	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
+		PathInformation = D:\OpenText\mbtuser_git\mbtuser\DiscoveryTestsScript\UFTOneURLRedpond\Test.tsp
+		Keyword = QTP
+		OpenAsReadOnly = False
+		BaselineId = 
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		B4B72D98-232F-4EB8-8746-417FF8F7CB06.Debug|Any CPU.Build.0 = Debug|Any CPU
+		B4B72D98-232F-4EB8-8746-417FF8F7CB06.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		B4B72D98-232F-4EB8-8746-417FF8F7CB06.Release|Any CPU.Build.0 = Release|Any CPU
+		B4B72D98-232F-4EB8-8746-417FF8F7CB06.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal
