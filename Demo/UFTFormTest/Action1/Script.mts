@@ -1,4 +1,15 @@
-﻿If Browser("Browser").Page("Page").WebButton("Allow Necessary Cookies").Exist Then
+﻿
+Set fileSystemObj = createobject("Scripting.FileSystemObject")
+chromeExist = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+If fileSystemObj.FileExists(chromeExist) then
+ systemUtil.Run ("C:\Program Files\Google\Chrome\Application\chrome.exe")
+Else
+   systemUtil.Run ("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe")
+End If
+
+Browser("Browser").Navigate Parameter("url")
+
+If Browser("Browser").Page("Page").WebButton("Allow Necessary Cookies").Exist Then
 	Browser("Browser").Page("Page").WebButton("Allow Necessary Cookies").Click
 End If
 Browser("Browser").Page("Page").WebEdit("firstname").Set "bob" @@ script infofile_;_ZIP::ssf2.xml_;_
