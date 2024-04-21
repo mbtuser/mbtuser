@@ -12,10 +12,7 @@ DevelopTool=AQT
 
 [Actions]
 Action0=Action0\Script.mts
-Action1Rename=Action1\Script.mts
-Action2Rename=Action2\Script.mts
-Action3=Action3\Script.mts
-Action4=Action4\Script.mts
+AOS Logout (UFT One PB)=Action1\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -34,21 +31,16 @@ Default Profile=default.usp
 Lang=none
 
 [TulipInfo]
-ProductName=OpenText UFT One
-Version=23.4
+ProductName=Micro Focus UFT One
+Version=2023
 
 [TulipAddins]
-ActiveX=
-AgGrid=
 AI=
 Database=
 File Content=
 Insight=
-Java=
-Mobile=
 Windows Applications=
 TEA=
-UIGrid=
 Web=
 WPF=
 XML=
@@ -64,12 +56,3 @@ Action0\ObjectRepository.bdb=
 Action1\Script.mts=
 Action1\Resource.mtr=
 Action1\ObjectRepository.bdb=
-Action2\Script.mts=
-Action2\Resource.mtr=
-Action2\ObjectRepository.bdb=
-Action3\Script.mts=
-Action3\Resource.mtr=
-Action3\ObjectRepository.bdb=
-Action4\Script.mts=
-Action4\Resource.mtr=
-Action4\ObjectRepository.bdb=
