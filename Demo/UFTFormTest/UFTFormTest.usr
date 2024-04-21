@@ -12,7 +12,7 @@ DevelopTool=AQT
 
 [Actions]
 Action0=Action0\Script.mts
-web=Action1\Script.mts
+web_form=Action1\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
