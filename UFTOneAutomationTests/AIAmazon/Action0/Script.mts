@@ -1,2 +1,2 @@
 ﻿RunAction "AIRename", oneIteration
-RunAction "Action2New", oneIteration
+RunAction "Action2NewRename", oneIteration
