@@ -9,7 +9,7 @@
     <parameter name = "confirmPassword" value="Aa1234567890"/>
     <test name = "RegisterNewUser">
         <classes>
-            <class name = "opentext.mbt.samples.Samples" >
+            <class name = "opentext.mbt.tests.Samples" >
                 <methods>
                     <include name="RegisterNewUser" />
                 </methods>
@@ -20,7 +20,7 @@
     <parameter name = "password" value="demo"/>
     <test name = "Login">
         <classes>
-            <class name = "opentext.mbt.samples.Samples" >
+            <class name = "opentext.mbt.tests.Samples" >
                 <methods>
                     <include name="Login" />
                 </methods>
@@ -30,7 +30,7 @@
     <parameter name = "accountName" value="Sample Account"/>
     <test name = "OpenNewAccount">
         <classes>
-            <class name = "opentext.mbt.samples.Samples" >
+            <class name = "opentext.mbt.tests.Samples" >
                 <methods>
                     <include name="OpenNewAccount" />
                 </methods>
