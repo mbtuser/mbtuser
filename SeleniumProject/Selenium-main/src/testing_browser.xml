@@ -1,0 +1,50 @@
+<suite name="Suite2">
+    <test name="browserIterationUrlTest">
+        <classes>
+            <parameter name="site" value="https://www.google.com"/>
+            <class name="org.example.MBTSeleniumSanityTests" />
+        </classes>
+    </test>
+    <test name="browserParameterUrlTest">
+        <classes>
+            <parameter name="site" value="https://www.google.com"/>
+         <!--   <class name="org.example.MBTSeleniumSanityTests" /> -->
+        </classes>
+    </test>
+    <test name="browserRegisterTest">
+        <classes>
+            <parameter name="first_name" value="bob"/>
+            <parameter name="last_name" value="dylan"/>
+            <parameter name="email" value="bob_dylan@maninme.com"/>
+            <parameter name="newPassword" value="newPassword"/>
+            <parameter name="confirm_password" value="confirm_password"/>
+            <parameter name="phoneNum" value="1234567890"/>
+        <!--    <class name="org.example.MBTSeleniumSanityTests" /> -->
+        </classes>
+    </test>
+    <test name="browserParameterXmlLoginTest">
+        <classes>
+            <parameter name="demoSite" value="https://demo.guru99.com/test/newtours"/>
+            <parameter name="userName" value="admin"/>
+            <parameter name="password" value="admin"/>
+            <!--   <class name="org.example.MBTSeleniumSanityTests" /> -->
+        </classes>
+    </test>
+    <test name="parameterXmlLoginTest">
+        <classes>
+            <parameter name="demoSite" value="https://demo.guru99.com/test/newtours"/>
+            <parameter name="userName" value="admin"/>
+            <parameter name="password" value="admin"/>
+            <class name="org.example.SeleniumE2ETests" />
+        </classes>
+    </test>
+    <test name="parametersXmlFormTest">
+        <classes>
+            <parameter name="formSite" value="https://www.techlistic.com/p/selenium-practice-form.html"/>
+            <parameter name="formFirstname" value="Bob"/>
+            <parameter name="formLastname" value="Dylan"/>
+            <parameter name="formDatepicker" value="16-05-2018"/>
+          <!--  <class name="org.example.SeleniumE2ETests" /> -->
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,59 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "selenium end 2 end tests">
+    <test name = "reporterStepTest">
+        <parameter name = "site" value="https://google.com"/>
+        <classes>
+            <class name = "org.example.MBTReporterTests" />
+        </classes>
+    </test>
+    <test name = "reporterFailedTest">
+        <parameter name = "site_failed" value="https://site_failed.com"/>
+        <parameter name = "site_failed" value="site_failed"/>
+        <classes>
+            <class name = "org.example.MBTReporterTests" />
+        </classes>
+    </test>
+    <test name = "reporterSideRespondTest">
+        <parameter name = "site_alvaro" value="http://alvaro.private.net:8000/"/>
+        <classes>
+            <class name = "org.example.MBTReporterTests" />
+        </classes>
+    </test>
+
+    <test name="browserParameterXmlUrlTest">
+        <parameter name="site" value="https://www.google.com"/>
+        <classes>
+            <class name="org.example.SeleniumE2ETests" />
+        </classes>
+    </test>
+    <test name="browserParameterXmlLoginTest">
+        <parameter name="demoSite" value="https://demo.guru99.com/test/newtours"/>
+        <parameter name="userName" value="admin"/>
+        <parameter name="password" value="admin"/>
+        <classes>
+            <class name = "org.example.SeleniumE2ETests" />
+        </classes>
+    </test>
+    <test name="parametersXmlFormTest">
+        <parameter name="formSite" value="https://www.techlistic.com/p/selenium-practice-form.html"/>
+        <parameter name="formFirstname" value="Bob"/>
+        <parameter name="formLastname" value="Dylan"/>
+        <parameter name="formDatepicker" value="16-05-2018"/>
+        <classes>
+            <class name = "org.example.SeleniumE2ETests" />
+        </classes>
+    </test>
+    <test name = "parameterGreaterThanTwo">
+        <parameter name = "param" value="3"/>
+        <classes>
+            <class name = "org.example.MBTWithoutDriverTests" />
+        </classes>
+    </test>
+    <test name = "parameterEqualsOnePlusOne">
+        <parameter name = "param" value="2"/>
+        <classes>
+            <class name = "org.example.MBTWithoutDriverTests" />
+        </classes>
+    </test>
+</suite>
