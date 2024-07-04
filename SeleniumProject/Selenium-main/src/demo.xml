@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "aob">
+    <parameter name = "firstName" value="bob"/>
+    <parameter name = "lastName" value="dylan"/>
+    <parameter name = "email" value="bob.dylan@theking.com"/>
+    <parameter name = "userName" value="dylan"/>
+    <parameter name = "password" value="Aa12345678"/>
+    <test name = "AOBRegistration">
+        <classes>
+            <class name = "org.fte.AdvantageDemo" >
+                <methods>
+                    <include name="AOBRegistration" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name = "Registration">
+        <classes>
+            <class name = "opentext.mbt.samples.Samples" >
+                <methods>
+                    <include name="Registration" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
