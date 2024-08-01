@@ -12,10 +12,7 @@ DevelopTool=AQT
 
 [Actions]
 Action0=Action0\Script.mts
-AOBLogin_nico_repo_tets=Action1\Script.mts
-AOBRegistration=Action3\Script.mts
-AOBLogout_nico_repo_tets=Action4\Script.mts
-nico_test_new_unit=Action5\Script.mts
+pass=Action1\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -58,12 +55,3 @@ Action0\ObjectRepository.bdb=
 Action1\Script.mts=
 Action1\Resource.mtr=
 Action1\ObjectRepository.bdb=
-Action3\Script.mts=
-Action3\Resource.mtr=
-Action3\ObjectRepository.bdb=
-Action4\Script.mts=
-Action4\Resource.mtr=
-Action4\ObjectRepository.bdb=
-Action5\Script.mts=
-Action5\Resource.mtr=
-Action5\ObjectRepository.bdb=
