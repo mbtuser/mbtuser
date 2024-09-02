@@ -1,4 +1,4 @@
-﻿WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("fromCity").Select "Los Angeles" @@ hightlight id_;_1928904928_;_script infofile_;_ZIP::ssf2.xml_;_
+﻿WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("fromCity").Select "Los Angeles" @@ hightlight id_;_0_;_script infofile_;_ZIP::ssf42.xml_;_
 WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("toCity").Select "San Francisco" @@ hightlight id_;_1920630488_;_script infofile_;_ZIP::ssf4.xml_;_
 'WpfWindow("Micro Focus MyFlight Sample").WpfImage("WpfImage").Click 5,13 @@ hightlight id_;_2100778920_;_script infofile_;_ZIP::ssf5.xml_;_
 'wait(5)
