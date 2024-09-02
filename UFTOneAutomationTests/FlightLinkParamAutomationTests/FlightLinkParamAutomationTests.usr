@@ -37,17 +37,12 @@ ProductName=OpenText UFT One
 Version=23.4
 
 [TulipAddins]
-ActiveX=
 AI=
 Database=
 File Content=
 Insight=
-PowerBuilder=
 Windows Applications=
 TEA=
-Terminal Emulators=
-UI Automation=
-UIA Pro=
 Visual Basic=
 .NET=
 WPF=
