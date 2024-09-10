@@ -7,6 +7,7 @@ Else
 End If
 
 Browser("Home - Advantage Bank").Navigate "https://advantageonlinebanking.com"
+RunAPITest "APITestGetFlights"
 
 If Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebButton("Sign-In").Exist(5) Then
 Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebEdit("username").Set Parameter("user_name") @@ script infofile_;_ZIP::ssf14.xml_;_
