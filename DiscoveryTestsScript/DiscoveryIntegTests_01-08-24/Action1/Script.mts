@@ -5,6 +5,7 @@ If fileSystemObj.FileExists(chromeExist) then
 Else
    systemUtil.Run ("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe")
 End If
+RunAPITest "APITestGetFlights"
 
 Browser("Home - Advantage Bank").Navigate "https://advantageonlinebanking.com"
 
