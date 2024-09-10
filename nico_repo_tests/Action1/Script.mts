@@ -11,6 +11,7 @@ Else
 objShell.ShellExecute "C:\Program Files (x86)\Mozilla Firefox\firefox.exe", iURL, "", ""
 End If
 wait(1)
+RunAPITest "APITestGetFlights"
 
 Reporter.ReportEvent micPass, "search success","the demo search of input value on google success"
 
