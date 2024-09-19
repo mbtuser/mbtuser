@@ -2,7 +2,8 @@
 systemUtil.Run ("C:\Program Files\Mozilla Firefox\firefox.exe")
 'systemUtil.Run ("C:\Program Files\Google\Chrome\Application\chrome.exe")
 AIUtil.SetContext Browser("creationtime:=0")
-Browser("creationtime:=0").Navigate("http://advantageonlineshopping.com/#/")
+Browser("creationtime:=0").Navigate("https://advantageonlineshopping.com/#/")
+Browser("creationtime:=0").Refresh
 AIUtil("profile").Click
 If AIUtil.FindTextBlock("Sign out").Exist(1) Then
 	Reporter.ReportEvent micWarning, "the AOB already in login", "going to logout from advantage online shopping"
