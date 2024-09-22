@@ -1,1 +1,1 @@
-﻿RunAction "pass", oneIteration
+﻿RunAction "rename_action_root_folder", oneIteration
