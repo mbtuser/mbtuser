@@ -3,6 +3,7 @@ Dim objShell
 iURL = "https://www.google.com/"
 set objShell = CreateObject("Shell.Application")
 
+RunAPITest "APITestGetFlights"
 
 
 Set fileSystemObj = createobject("Scripting.FileSystemObject")
