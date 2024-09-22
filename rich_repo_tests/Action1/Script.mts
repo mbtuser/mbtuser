@@ -3,8 +3,6 @@ Dim objShell
 iURL = "https://www.google.com/"
 set objShell = CreateObject("Shell.Application")
 
-RunAPITest "APITestGetFlights"
-
 
 Set fileSystemObj = createobject("Scripting.FileSystemObject")
 chromeExist = "C:\Program Files\Mozilla Firefox\firefox.exe"
