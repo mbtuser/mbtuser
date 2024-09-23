@@ -1,1 +1,2 @@
-﻿RunAction "pass", oneIteration
+﻿RunAction "RenameAction", oneIteration
+RunAction "newAction", oneIteration
