@@ -1,0 +1,1 @@
+﻿RunAction "LoanCalculator", oneIteration
