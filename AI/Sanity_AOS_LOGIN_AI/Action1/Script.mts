@@ -1,7 +1,4 @@
-﻿' Set AI context on the first browser instance
-AIUtil.SetContext Browser("creationtime:=0")
-
-' Launch Google Chrome browser
+﻿' Launch Google Chrome browser
 SystemUtil.Run "C:\Program Files\Google\Chrome\Application\chrome.exe"
 
 ' Set context again after browser launch
