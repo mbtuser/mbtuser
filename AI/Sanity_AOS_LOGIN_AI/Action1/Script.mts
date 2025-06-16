@@ -1,8 +1,8 @@
 ﻿' Set AI context on the first browser instance
 AIUtil.SetContext Browser("creationtime:=0")
 
-' Launch Firefox browser
-SystemUtil.Run "C:\Program Files\Mozilla Firefox\firefox.exe"
+' Launch Google Chrome browser
+SystemUtil.Run "C:\Program Files\Google\Chrome\Application\chrome.exe"
 
 ' Set context again after browser launch
 AIUtil.SetContext Browser("creationtime:=0")
@@ -35,7 +35,6 @@ Else
     AIUtil("input", "Password").Type "Password1"
     AIUtil.FindTextBlock("SIGN IN").Click
 End If
-
 
 ' Click profile icon
 AIUtil("profile").Click
