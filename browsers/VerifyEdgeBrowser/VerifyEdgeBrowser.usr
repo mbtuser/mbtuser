@@ -12,7 +12,9 @@ DevelopTool=AQT
 
 [Actions]
 Action0=Action0\Script.mts
-FireFox=Action1\Script.mts
+LoginSiteUser=Action1\Script.mts
+Logout=Action4\Script.mts
+OpenNewAccount=Action3\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -56,3 +58,9 @@ Action0\ObjectRepository.bdb=
 Action1\Script.mts=
 Action1\Resource.mtr=
 Action1\ObjectRepository.bdb=
+Action4\Script.mts=
+Action4\Resource.mtr=
+Action4\ObjectRepository.bdb=
+Action3\Script.mts=
+Action3\Resource.mtr=
+Action3\ObjectRepository.bdb=
