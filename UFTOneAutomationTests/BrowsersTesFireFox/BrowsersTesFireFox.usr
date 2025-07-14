@@ -31,15 +31,15 @@ Default Profile=default.usp
 Lang=none
 
 [TulipInfo]
-ProductName=OpenText UFT One
-Version=23.4
+ProductName=OpenText Functional Testing
+Version=24.4
 
 [TulipAddins]
+AF=
 AI=
 Database=
 File Content=
 Insight=
-Mobile=
 Windows Applications=
 TEA=
 Web=
