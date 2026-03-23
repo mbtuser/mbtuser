@@ -1,0 +1,52 @@
+﻿import random
+uniq = random.randint(1000, 9999)
+username = f"vladradu{uniq}"
+ 
+Browser("Advantage Shopping").Page("Advantage Shopping").Link("UserMenu").Click() @@ script infofile_;_ZIP::ssf94.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").Link("CREATE NEW ACCOUNT").Click() @@ script infofile_;_ZIP::ssf95.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("usernameRegisterPage").Set(username) @@ script infofile_;_ZIP::ssf97.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("emailRegisterPage").Set("vladradu@mail.com") @@ script infofile_;_ZIP::ssf98.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("passwordRegisterPage").SetSecure("6994314053535d315aa130cebe2ab6b781fa96fc66bba5b8ab100dad") @@ script infofile_;_ZIP::ssf99.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("confirm_passwordRegisterPage").SetSecure("6994314585fda2fc126ec61882cb0c6a392023638ac9be36c8bb60b8") @@ script infofile_;_ZIP::ssf100.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebElement("First Name").Click() @@ script infofile_;_ZIP::ssf101.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("first_nameRegisterPage").Set("Vlad") @@ script infofile_;_ZIP::ssf102.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("last_nameRegisterPage").Set("Radu") @@ script infofile_;_ZIP::ssf103.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebElement("Phone Number").Click() @@ script infofile_;_ZIP::ssf104.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("phone_numberRegisterPage").Set("1234567890") @@ script infofile_;_ZIP::ssf105.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebElement("CountryAfganistanAlbaniaAlgeri").Click() @@ script infofile_;_ZIP::ssf106.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebList("countryListboxRegisterPage").Select("Romania") @@ script infofile_;_ZIP::ssf107.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("cityRegisterPage").Set("Cluj-Napoca") @@ script infofile_;_ZIP::ssf108.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("addressRegisterPage").Set("Strada Sperantei") @@ script infofile_;_ZIP::ssf109.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebElement("State / Province / Region").Click() @@ script infofile_;_ZIP::ssf110.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("state_/_province_/_regionRegis").Set("Cluj") @@ script infofile_;_ZIP::ssf111.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("postal_codeRegisterPage").Set("123456") @@ script infofile_;_ZIP::ssf112.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebCheckBox("allowOffersPromotion").Set("OFF") @@ script infofile_;_ZIP::ssf113.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebCheckBox("i_agree").Set("ON") @@ script infofile_;_ZIP::ssf114.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebButton("register_btn").Click() @@ script infofile_;_ZIP::ssf115.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").Sync()
+
+Browser("Advantage Shopping").Page("Advantage Shopping").Link("dvantage DEMO").Click()
+Browser("Advantage Shopping").Page("Advantage Shopping").Link("SpeakersCategory").Click() @@ script infofile_;_ZIP::ssf140.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").Image("fetchImage?image_id=4600").Click() @@ script infofile_;_ZIP::ssf141.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebButton("save_to_cart").Click() @@ script infofile_;_ZIP::ssf142.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").Link("HOME").Click() @@ script infofile_;_ZIP::ssf143.xml_;_
+
+Browser("Advantage Shopping").Page("Advantage Shopping").Link("MiceCategory").Click() @@ script infofile_;_ZIP::ssf144.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").Image("fetchImage?image_id=5600").Click() @@ script infofile_;_ZIP::ssf145.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebElement("rabbit").Click() @@ script infofile_;_ZIP::ssf146.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebElement("WebElement").Click()
+Browser("Advantage Shopping").Page("Advantage Shopping").WebButton("save_to_cart").Click()
+
+Browser("Advantage Shopping").Page("Advantage Shopping").WebButton("check_out_btn_2").Click() @@ script infofile_;_ZIP::ssf126.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").Check(CheckPoint("Advantage Shopping")) @@ script infofile_;_ZIP::ssf139.xml_;_
+
+
+Browser("Advantage Shopping").Page("Advantage Shopping").WebButton("next_btn").Click() @@ script infofile_;_ZIP::ssf127.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebElement("WebElement_2").Click() @@ script infofile_;_ZIP::ssf128.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("card_number").Set("1234 5678 9012") @@ script infofile_;_ZIP::ssf129.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("cvv_number").Set("123") @@ script infofile_;_ZIP::ssf130.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebList("mmListbox").Select("10") @@ script infofile_;_ZIP::ssf131.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebList("yyyyListbox").Select("2030") @@ script infofile_;_ZIP::ssf132.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebEdit("cardholder_name").Set("Vlad Radu") @@ script infofile_;_ZIP::ssf133.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebCheckBox("save_master_credit").Set("OFF") @@ script infofile_;_ZIP::ssf134.xml_;_
+Browser("Advantage Shopping").Page("Advantage Shopping").WebButton("pay_now_btn_ManualPayment").Click()
