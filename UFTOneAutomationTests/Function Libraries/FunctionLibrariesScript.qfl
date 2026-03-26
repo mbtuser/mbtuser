@@ -4,3 +4,13 @@
 		  print SumTotal	  
 	End If
 End Function
+ 
+Function RecoveryFunction1(Object, Method, Arguments, retVal)
+ 
+End Function 
+ 
+ 
+Function Recovery_Warning_Handler(Object, Method, Arguments, retVal)
+ 
+End Function 
+ 
