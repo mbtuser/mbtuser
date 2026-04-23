@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.1.3.0
+Project("") = "UFTOneWarningRecoveryScenario", "UFTOneWarningRecoveryScenario\Test.tsp", "D861D7B8-F026-4FA0-9431-39F15125962F"
+	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
+		PathInformation = C:\Users\rkarat\OneDrive - OpenText\Documents\GitHub\mbtuser\UFTOneAutomationTests\UFTOneWarningRecoveryScenario\Test.tsp
+		Keyword = QTP
+		OpenAsReadOnly = False
+		BaselineId = 
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		D861D7B8-F026-4FA0-9431-39F15125962F.Debug|Any CPU.Build.0 = Debug|Any CPU
+		D861D7B8-F026-4FA0-9431-39F15125962F.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		D861D7B8-F026-4FA0-9431-39F15125962F.Release|Any CPU.Build.0 = Release|Any CPU
+		D861D7B8-F026-4FA0-9431-39F15125962F.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal
