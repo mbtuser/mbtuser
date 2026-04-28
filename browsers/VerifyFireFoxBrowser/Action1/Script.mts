@@ -32,7 +32,7 @@ Function GetObjectByName(elementName)
             Set GetObjectByName = Nothing
     End Select
 End Function
-
+wait(5)
 Set usernameObj = GetObjectByName(Parameter("usernameField"))
 If Not usernameObj Is Nothing And usernameObj.Exist(3) Then
     usernameObj.Set Parameter("username")
@@ -40,7 +40,7 @@ If Not usernameObj Is Nothing And usernameObj.Exist(3) Then
 Else
     Reporter.ReportEvent micFail, "Username", "Username field not found"
 End If
-
+wait(5)
 Set passwordObj = GetObjectByName(Parameter("passwordField"))
 If Not passwordObj Is Nothing And passwordObj.Exist(3) Then
     passwordObj.SetSecure Parameter("password")
@@ -48,7 +48,7 @@ If Not passwordObj Is Nothing And passwordObj.Exist(3) Then
 Else
     Reporter.ReportEvent micFail, "Password", "Password field not found"
 End If
-
+wait(5)
 Set signInObj = GetObjectByName(Parameter("signInButton"))
 Set loginObj  = GetObjectByName(Parameter("loginButton"))
 
