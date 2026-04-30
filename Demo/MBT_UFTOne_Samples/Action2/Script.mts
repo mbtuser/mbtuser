@@ -16,3 +16,4 @@ If Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebButton("Reg
 	Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebEdit("confirmPass").Set Parameter("confirmPass") @@ script infofile_;_ZIP::ssf9.xml_;_
 	Browser("Home - Advantage Bank").Page("Home - Advantage Bank").WebButton("Register").Click
 End If
+SystemUtil.CloseProcessByName "firefox.exe"
