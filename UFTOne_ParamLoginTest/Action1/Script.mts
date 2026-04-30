@@ -26,3 +26,5 @@ Reporter.ReportEvent micPass, "Passed Test", "FireFox Browser work properly"
 else
 Reporter.ReportEvent micFail, "Failed Test", "FireFox Browser Failed"
 End If @@ hightlight id_;_65662_;_script infofile_;_ZIP::ssf12.xml_;_
+
+SystemUtil.CloseProcessByName "firefox.exe"
