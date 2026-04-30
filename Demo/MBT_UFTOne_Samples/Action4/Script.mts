@@ -4,3 +4,4 @@ End If
 wait(3)
        Browser("Home - Advantage Bank").Page("Dashboard - Advantage").WebButton("WebButton").Click @@ script infofile_;_ZIP::ssf2.xml_;_
        Browser("Home - Advantage Bank").Page("Dashboard - Advantage").WebMenu("My Profile Management").Select "Logout" @@ script infofile_;_ZIP::ssf3.xml_;_
+       SystemUtil.CloseProcessByName "firefox.exe"
