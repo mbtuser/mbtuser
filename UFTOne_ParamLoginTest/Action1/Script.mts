@@ -13,7 +13,8 @@ End If
 wait(3)
 Browser("AutoPilot AI").Navigate Parameter("url")
 wait(3)
-If Browser("AutoPilot AI").Page("AutoPilot AI").WebButton("Login").Exist(5) Then
+
+If Browser("AutoPilot AI").Page("AutoPilot AI").WebButton("Login").Exist(5) Then @@ script infofile_;_ZIP::ssf15.xml_;_
 Browser("AutoPilot AI").Page("AutoPilot AI").WebButton("Login").Click
 Browser("AutoPilot AI").Page("AutoPilot AI").WebEdit("Enter any username").Set Parameter("username") @@ script infofile_;_ZIP::ssf14.xml_;_
 Browser("AutoPilot AI").Page("AutoPilot AI").WebEdit("Enter any password").SetSecure Parameter("password")
