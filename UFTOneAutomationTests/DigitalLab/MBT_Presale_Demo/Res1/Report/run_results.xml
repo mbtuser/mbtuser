@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Iteration">
+<ReportNode type="Action">
+<ReportNode type="Step">
+<Data>
+    <Name>Element not found. (Exception from HRESULT: 0x8002802B (TYPE_E_ELEMENTNOTFOUND))</Name>
+    <ErrorText>Element not found. (Exception from HRESULT: 0x8002802B (TYPE_E_ELEMENTNOTFOUND))</ErrorText>
+    <Description>&lt;BR/&gt;Line (7): &amp;quot;Set qtMobileLauncher = QTP.Test.Settings.Launchers.Item(&amp;quot;Mobile&amp;quot;)&amp;quot;.</Description>
+    <StartTime>2026-07-07 18:18:00</StartTime>
+    <Result>Failed</Result>
+    <Extension>
+      <StackTrace>
+        <StackFrame>
+          <ModuleName><![CDATA[mobile_create_order]]></ModuleName>
+          <FileName><![CDATA[mobile_create_order]]></FileName>
+          <Language><![CDATA[mobile_create_order]]></Language>
+          <FunctionName><![CDATA[VBScript global code]]></FunctionName>
+          <Scripts><![CDATA[Set qtMobileLauncher = QTP.Test.Settings.Launchers.Item("Mobile")]]></Scripts>
+          <LineNo><![CDATA[7]]></LineNo>
+        </StackFrame>
+      </StackTrace>
+      <IconKey>357a1bd4178043939bd5680ae9ea02aa</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <MergeIsErrorIcon>True</MergeIsErrorIcon>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\5be819ed-466e-4deb-b073-57caba5bec08.jpeg" />
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Stop Run</Name>
+    <Description>Run stopped by user.</Description>
+    <StartTime>2026-07-07 18:18:07</StartTime>
+    <Result>Information</Result>
+    <Extension>
+      <IconKey>2a94503e24384906a71d336e24d55b85</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>mobile_create_order</Name>
+    <Description />
+    <StartTime>2026-07-07 18:18:00</StartTime>
+    <Duration>7</Duration>
+    <Result>Failed</Result>
+    <InputParameters>
+      <Parameter name="username" value="admin" type="System.String" />
+      <Parameter name="password" value="adm1n" type="System.String" />
+    </InputParameters>
+    <OutputParameters>
+      <Parameter name="OrderNumber" value="" type="" />
+    </OutputParameters>
+    <Extension>
+      <IconKey>99a553fdcb4947a78c6aaf50d3a68758</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action0</Name>
+    <Description />
+    <StartTime>2026-07-07 18:17:59</StartTime>
+    <Duration>8</Duration>
+    <Result>Failed</Result>
+    <Extension>
+      <IconKey>2de5e1c753ff41debc4acea4c71ddd32</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Index>1</Index>
+    <TestedApplications />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>MBT_Presale_Demo</Name>
+    <ToolName>OpenText Functional Testing</ToolName>
+    <ToolVersion>25.2</ToolVersion>
+    <ToolVersionStringLiteral>25.2</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2026-07-07 18:17:58</StartTime>
+    <Duration>9</Duration>
+    <Result>Failed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>7000e87260ec417ea7f328c8c655fb41</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>+03:00:00</Timezone>
+      <Locale>English (Israel)</Locale>
+      <User>OPENTEXT\rkarat</User>
+      <CpuInfo>Intel(R) Core(TM) i7-10850H CPU @ 2.70GHz</CpuInfo>
+      <NumberOfCores>12</NumberOfCores>
+      <TotalMemory>65282</TotalMemory>
+      <HostName>\OTX-8ZN56G3</HostName>
+      <OSInfo>Windows 11 25H2 (x64)</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res1</ResultName>
+    <RunStartTime>2026-07-07 18:17:58</RunStartTime>
+    <Timezone>+03:00:00</Timezone>
+    <OrchestrationToolName>OpenText Functional Testing</OrchestrationToolName>
+    <OrchestrationToolVersion>25.2</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>25.2</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>
