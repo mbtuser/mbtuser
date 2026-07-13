@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.1.3.0
+Project("") = "Mobile_create_order", "Mobile_create_order\Test.tsp", "FFE25D0E-2F80-4F47-B9D3-DE3611CE59DD"
+	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
+		PathInformation = C:\Users\rkarat\OneDrive - OpenText\Documents\GitHub\mbtuser\UFTOneAutomationTests\DigitalLab\Mobile_create_order\Test.tsp
+		Keyword = QTP
+		OpenAsReadOnly = False
+		Language = VBScript
+	EndProjectSection
+EndProject
+Project("") = "web_get_order", "web_get_order\Test.tsp", "A8CE0514-46D3-4E0C-B09F-5EC66F4AA692"
+	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
+		PathInformation = C:\Users\rkarat\OneDrive - OpenText\Documents\GitHub\mbtuser\UFTOneAutomationTests\DigitalLab\web_get_order\Test.tsp
+		Keyword = QTP
+		OpenAsReadOnly = False
+		BaselineId = 
+		Language = VBScript
+	EndProjectSection
+EndProject
+Project("") = "app_flight", "app_flight\Test.tsp", "57BC3E61-DC96-4F38-BAE6-A193226DF500"
+	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
+		PathInformation = C:\Users\rkarat\OneDrive - OpenText\Documents\GitHub\mbtuser\UFTOneAutomationTests\DigitalLab\app_flight\Test.tsp
+		Keyword = QTP
+		OpenAsReadOnly = False
+		BaselineId = 
+		Language = VBScript
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		FFE25D0E-2F80-4F47-B9D3-DE3611CE59DD.Debug|Any CPU.Build.0 = Debug|Any CPU
+		FFE25D0E-2F80-4F47-B9D3-DE3611CE59DD.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		FFE25D0E-2F80-4F47-B9D3-DE3611CE59DD.Release|Any CPU.Build.0 = Release|Any CPU
+		FFE25D0E-2F80-4F47-B9D3-DE3611CE59DD.Release|Any CPU.ActiveCfg = Release|Any CPU
+		A8CE0514-46D3-4E0C-B09F-5EC66F4AA692.Debug|Any CPU.Build.0 = Debug|Any CPU
+		A8CE0514-46D3-4E0C-B09F-5EC66F4AA692.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		A8CE0514-46D3-4E0C-B09F-5EC66F4AA692.Release|Any CPU.Build.0 = Release|Any CPU
+		A8CE0514-46D3-4E0C-B09F-5EC66F4AA692.Release|Any CPU.ActiveCfg = Release|Any CPU
+		57BC3E61-DC96-4F38-BAE6-A193226DF500.Debug|Any CPU.Build.0 = Debug|Any CPU
+		57BC3E61-DC96-4F38-BAE6-A193226DF500.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		57BC3E61-DC96-4F38-BAE6-A193226DF500.Release|Any CPU.Build.0 = Release|Any CPU
+		57BC3E61-DC96-4F38-BAE6-A193226DF500.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

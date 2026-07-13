@@ -2,11 +2,13 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 # SharpDevelop 4.1.3.0
-Project("") = "MBT_Presale_mobile", "MBT_Presale_mobile\Test.tsp", "88B2F9BD-8984-46FD-B1BD-5A0B2DB76130"
+Project("") = "Mobile_create_order", "Mobile_create_order\Test.tsp", "C7A1626D-D90E-4887-9240-45A5724AB3FF"
 	ProjectSection(ProjectMetadata) = HP.UFT.ProjectSystem.Dynamic.ProjectMetadata
-		PathInformation = C:\Users\rkarat\OneDrive - OpenText\Documents\GitHub\mbtuser\UFTOneAutomationTests\DigitalLab\MBT_Presale_mobile\Test.tsp
+		PathInformation = C:\Users\rkarat\OneDrive - OpenText\Documents\GitHub\mbtuser\UFTOneAutomationTests\DigitalLab\Mobile_create_order\Test.tsp
 		Keyword = QTP
 		OpenAsReadOnly = False
+		BaselineId = 
+		Language = VBScript
 	EndProjectSection
 EndProject
 Global
@@ -15,9 +17,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		88B2F9BD-8984-46FD-B1BD-5A0B2DB76130.Debug|Any CPU.Build.0 = Debug|Any CPU
-		88B2F9BD-8984-46FD-B1BD-5A0B2DB76130.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		88B2F9BD-8984-46FD-B1BD-5A0B2DB76130.Release|Any CPU.Build.0 = Release|Any CPU
-		88B2F9BD-8984-46FD-B1BD-5A0B2DB76130.Release|Any CPU.ActiveCfg = Release|Any CPU
+		C7A1626D-D90E-4887-9240-45A5724AB3FF.Debug|Any CPU.Build.0 = Debug|Any CPU
+		C7A1626D-D90E-4887-9240-45A5724AB3FF.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		C7A1626D-D90E-4887-9240-45A5724AB3FF.Release|Any CPU.Build.0 = Release|Any CPU
+		C7A1626D-D90E-4887-9240-45A5724AB3FF.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 EndGlobal
