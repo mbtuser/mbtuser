@@ -1,0 +1,1 @@
+﻿var __testDataSource={items:[{dataFilePath:'Default.xlsx',dataFileFormat:'excel',dataFileFolder:'C:\\Users\\rkarat\\OneDrive - OpenText\\Documents\\GitHub\\mbtuser\\UFTOneAutomationTests\\DigitalLab\\web_get_order\\Res3',namePairs:[]}]};
