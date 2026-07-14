@@ -14,6 +14,7 @@ DevelopTool=AQT
 Action0=Action0\Script.mts
 mobile_AOS_Login=Action1\Script.mts
 mobile_AOS_Order=Action2\Script.mts
+mobile_AOS_logout=Action3\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -62,3 +63,6 @@ Action1\ObjectRepository.bdb=
 Action2\Script.mts=
 Action2\Resource.mtr=
 Action2\ObjectRepository.bdb=
+Action3\Script.mts=
+Action3\Resource.mtr=
+Action3\ObjectRepository.bdb=
