@@ -12,9 +12,7 @@ DevelopTool=AQT
 
 [Actions]
 Action0=Action0\Script.mts
-web_AOS_Login=Action1\Script.mts
-web_AOS_get_Order=Action2\Script.mts
-web_AOS_Logout=Action4\Script.mts
+Google=Action1\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -34,7 +32,7 @@ Lang=none
 
 [TulipInfo]
 ProductName=OpenText Functional Testing
-Version=26.1
+Version=26.3
 
 [TulipAddins]
 AF=
@@ -45,7 +43,6 @@ Insight=
 Mobile=
 Windows Applications=
 TEA=
-UI Automation=
 Web=
 WPF=
 XML=
@@ -61,9 +58,3 @@ Action0\ObjectRepository.bdb=
 Action1\Script.mts=
 Action1\Resource.mtr=
 Action1\ObjectRepository.bdb=
-Action2\Script.mts=
-Action2\Resource.mtr=
-Action2\ObjectRepository.bdb=
-Action4\Script.mts=
-Action4\Resource.mtr=
-Action4\ObjectRepository.bdb=
